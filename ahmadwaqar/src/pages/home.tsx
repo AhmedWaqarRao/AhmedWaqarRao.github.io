@@ -4,9 +4,7 @@ import { Linkedin, Github, Mail } from "lucide-react";
 const Home: FC = () => {
   return (
     <div className="flex flex-col gap-10">
-      {/* Header Section with Image */}
       <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl shadow-lg p-10 flex flex-col md:flex-row items-center justify-between">
-        {/* Left Side - Text */}
         <div className="md:w-2/3">
           <h1 className="text-4xl font-bold">Ahmed Waqar Rao 👋</h1>
           <p className="mt-3 text-lg leading-relaxed">
@@ -18,7 +16,6 @@ const Home: FC = () => {
           </p>
         </div>
 
-        {/* Right Side - Profile Image */}
         <div className="mt-6 md:mt-0 md:w-1/3 flex justify-center">
           <img
             src="/ahmadwaqar.jpg"
@@ -28,27 +25,18 @@ const Home: FC = () => {
         </div>
       </section>
 
-      {/* About Me */}
       <section className="bg-white rounded-2xl shadow p-6">
-        <h2 className="text-2xl font-bold mb-3">About Me</h2>
-        <p className="text-gray-700 leading-relaxed">
-          I am passionate about applying my experience in Deep Learning,
-          Machine Learning, and Computer Vision to UAV technology 🚁. My focus
-          is on <span className="font-semibold">Object Detection</span> and{" "}
-          <span className="font-semibold">Segmentation</span>. I have experience
-          in developing edge-based adaptive selection methods for UAV target
-          detection and enhancing UAV technology through sensor group selection
-          and embedded AI integration.
-        </p>
-        <p className="mt-4 text-gray-700">
-          I am dedicated to continuous learning 📚 and staying updated on the
-          latest advancements to deliver high-quality results. With strong
-          problem-solving skills and a collaborative mindset, my goal is to make
-          meaningful contributions to AI.
-        </p>
+          <h2 className="text-2xl font-bold mb-3">About Me</h2>
+          <p className="text-gray-700 leading-relaxed">
+              I am a passionate researcher and engineer focused on applying my expertise in <span className="font-semibold">Deep Learning, Machine Learning, and Computer Vision</span> to optimize Unmanned Aerial Vehicles (UAVs) for resource-constrained edge environments. 🚁 My current research involves developing edge-based adaptive selection methods for efficient UAV target detection, tackling critical challenges like computational limitations, energy efficiency, and latency to enable real-time <span className="font-semibold">object detection and segmentation</span> in demanding scenarios.
+          </p>
+          <p className="mt-4 text-gray-700 leading-relaxed">
+              Central to my work is architecting lightweight, high-performance models using state-of-the-art algorithms like YOLO, refined with advanced techniques such as pruning and attention mechanisms. I bridge the gap between theoretical innovation and practical deployment, successfully porting these models to edge devices like the NVIDIA Jetson AGX Xavier to achieve high-speed inference for real-world applications. My research has direct impact across critical domains such as <span className="font-semibold">precision agriculture, wildlife monitoring, disaster response, and industrial automation</span>.
+          </p>
+          <p className="mt-4 text-gray-700">
+              I am dedicated to continuous learning 📚 and interdisciplinary collaboration, striving to push the boundaries of AI integration in UAV systems. My goal is to contribute meaningfully to the field by delivering scalable, robust, and efficient AI solutions that bridge academic research with tangible, real-world impact.
+          </p>
       </section>
-
-      {/* Contact Section */}
       <section className="bg-white rounded-2xl shadow p-6">
         <h2 className="text-2xl font-bold mb-3">Contact Me</h2>
         <div className="flex flex-col gap-2 text-gray-700">
@@ -68,10 +56,9 @@ const Home: FC = () => {
           </p>
         </div>
 
-        {/* Social Links */}
         <div className="flex gap-4 mt-4">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/ahmed-waqar-rao-b1b700183/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-blue-700 hover:text-blue-900"
@@ -79,7 +66,7 @@ const Home: FC = () => {
             <Linkedin size={20} /> LinkedIn
           </a>
           <a
-            href="https://www.github.com"
+            href="https://github.com/AhmedWaqarRao"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-gray-800 hover:text-black"
@@ -95,7 +82,6 @@ const Home: FC = () => {
         </div>
       </section>
 
-      {/* Learning Section */}
       <section className="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-2xl shadow p-6">
         <h2 className="text-2xl font-bold mb-3">🌱 Currently Learning</h2>
         <p>

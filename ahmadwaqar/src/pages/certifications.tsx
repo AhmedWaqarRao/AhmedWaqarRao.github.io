@@ -370,14 +370,14 @@ const Certifications: FC = () => {
                   )}
                 </div>
                 
-                {certification.credentialUrl && (
+                {/* {certification.credentialUrl && (
                   <button 
                     onClick={() => handleShowCredential(certification.credentialUrl)}
                     className="flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm"
                   >
                     <ExternalLink size={16} className="mr-1" /> Show credential
                   </button>
-                )}
+                )} */}
               </div>
             </div>
           ))}
@@ -418,7 +418,7 @@ const Certifications: FC = () => {
       )}
 
       {/* PDF Modal */}
-{selectedPdf && (
+{/* {selectedPdf && (
   <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
     <div className="bg-white rounded-lg w-full max-w-4xl max-h-full flex flex-col">
       <div className="flex justify-between items-center p-4 border-b">
@@ -448,7 +448,7 @@ const Certifications: FC = () => {
       </div>
     </div>
   </div>
-)}
+)} */}
 
     </div>
   );
