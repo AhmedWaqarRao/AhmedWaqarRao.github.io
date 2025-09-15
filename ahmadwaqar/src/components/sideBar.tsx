@@ -12,6 +12,7 @@ const Sidebar: FC = () => {
     { name: "Workshops/Trainings", path: "/workshops" },
     { name: "Publications", path: "/publications" },
     { name: "Experience", path: "/experience" },
+    { name: "Education", path: "/education" },
     { name: "Recommendations", path: "/recommendations" },
   ];
 
