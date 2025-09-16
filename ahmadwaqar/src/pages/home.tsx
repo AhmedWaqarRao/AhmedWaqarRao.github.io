@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Github, Mail,Globe,MessageCircle } from "lucide-react";
 
 const Home: FC = () => {
   return (
@@ -50,13 +50,19 @@ const Home: FC = () => {
             </a>
           </p>
           <p>
+                📞 <span className="font-semibold">Phone:</span> 
+                <a href="tel:+923064922957" className="text-blue-600 hover:underline ml-1">+92 306 4922957</a> / 
+                <a href="tel:+8617792251931" className="text-blue-600 hover:underline"> +86 177 92251931</a>
+            </p>
+            <p></p>
+          <p>
             📍 <span className="font-semibold">Address:</span> Xian, Shaanxi, P.R
             China <br /> School of Computer Science, Northwestern Polytechnical
             University, 710072
           </p>
         </div>
 
-        <div className="flex gap-4 mt-4">
+        <div className="flex gap-4 mt-4 flex-wrap">
           <a
             href="https://www.linkedin.com/in/ahmed-waqar-rao-b1b700183/"
             target="_blank"
@@ -65,6 +71,7 @@ const Home: FC = () => {
           >
             <Linkedin size={20} /> LinkedIn
           </a>
+
           <a
             href="https://github.com/AhmedWaqarRao"
             target="_blank"
@@ -73,13 +80,33 @@ const Home: FC = () => {
           >
             <Github size={20} /> GitHub
           </a>
+
           <a
             href="mailto:ahmedwaqarrao.909@gmail.com"
             className="flex items-center gap-2 text-red-600 hover:text-red-800"
           >
             <Mail size={20} /> Email
           </a>
+
+          <a
+            href="https://orcid.org/0009-0007-3759-2125"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-green-700 hover:text-green-900"
+          >
+            <Globe size={20} /> ORCID
+          </a>
+
+          <a
+            href="https://wa.me/923064922957"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-green-600 hover:text-green-800"
+          >
+            <MessageCircle size={20} /> WhatsApp
+          </a>
         </div>
+
       </section>
 
       <section className="bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-2xl shadow p-6">

@@ -10,6 +10,38 @@ interface Recommendation {
 
 const recommendations: Recommendation[] = [
   {
+    name: "Yu Zhang",
+    position:
+      "Professor at the Department of AI Computing System, School of Computer Science, Northwestern Polytechnical University, China",
+    relation: "Academic Mentor",
+    date: "2024",
+    text: `Professor Yu Zhang has been instrumental in guiding my academic research journey. 
+    His mentorship in AI and computing systems has provided me with invaluable direction, 
+    shaping my skills in deep learning, reinforcement learning, and applied research.`,
+  },
+  {
+    name: "Dr. Umar Shahbaz Khan",
+    position:
+      "Tenured Associate Professor / Project Director NCRA, NUST, Pakistan",
+    relation: "Former Teacher & Research Supervisor",
+    date: "2024",
+    text: `Dr. Umar Shahbaz Khan played a significant role in my academic development 
+    during my studies at NUST. His mentorship in robotics and automation provided 
+    me with the interdisciplinary skills and critical thinking required for 
+    high-impact research.`,
+  },
+  {
+    name: "Dr. Hamid Jabbar",
+    position:
+      "Associate Professor & Head of Department, Mechatronics Engineering, NUST, Pakistan",
+    relation: "Department Head & Mentor",
+    date: "2024",
+    text: `As the Head of Department at NUST, Dr. Hamid Jabbar provided continuous support 
+    and encouragement throughout my academic and research career. His leadership 
+    and mentorship inspired me to pursue interdisciplinary projects and 
+    contribute meaningfully to my field.`,
+  },
+  {
     name: "Huzaifa Azam",
     position: "Graduate Research Assistant | MSc Mechanical Engineering | UTP | Malaysia",
     relation: "Reported directly to Ahmed Waqar",
