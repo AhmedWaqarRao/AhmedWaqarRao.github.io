@@ -22,18 +22,6 @@ const education: EducationItem[] = [
       "Bachelor of Engineering (BE), Mechatronics, Robotics, and Automation Engineering",
     period: "2018 - 2022",
   },
-  {
-    institution: "Army Public School (APSACS)",
-    degree: "Intermediate, Pre-Engineering",
-    period: "2016 - 2018",
-    grade: "A",
-  },
-  {
-    institution: "Army Public School (APSACS)",
-    degree: "Matriculation, Mathematics and Computer Science",
-    period: "2014 - 2016",
-    grade: "A+",
-  },
 ];
 
 const Education: FC = () => {

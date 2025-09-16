@@ -7,12 +7,14 @@ const Sidebar: FC = () => {
 
   const links = [
     { name: "Home", path: "/" },
-    { name: "Projects", path: "/projects" },
-    { name: "Certifications", path: "/certifications" },
-    { name: "Workshops/Trainings", path: "/workshops" },
-    { name: "Publications", path: "/publications" },
-    { name: "Experience", path: "/experience" },
     { name: "Education", path: "/education" },
+    { name: "Experience", path: "/experience" },
+    { name: "Workshops/Trainings", path: "/workshops" },
+    { name: "Projects", path: "/projects" },
+    { name: "Publications", path: "/publications" },
+    { name: "Certifications", path: "/certifications" },
+    
+    
     { name: "Recommendations", path: "/recommendations" },
   ];
 
