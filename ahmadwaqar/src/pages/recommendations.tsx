@@ -16,8 +16,8 @@ const recommendations: Recommendation[] = [
     relation: "Academic Mentor",
     date: "2024",
     text: `Professor Yu Zhang has been instrumental in guiding my academic research journey. 
-    His mentorship in AI and computing systems has provided me with invaluable direction, 
-    shaping my skills in deep learning, reinforcement learning, and applied research.`,
+    His mentorship in Edge AI and Edge computing has provided me with invaluable direction, 
+    shaping my skills in deep learning and applied research.`,
   },
   {
     name: "Dr. Umar Shahbaz Khan",
