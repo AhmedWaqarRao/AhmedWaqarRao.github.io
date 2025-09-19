@@ -43,15 +43,7 @@ const publications: Publication[] = [
       "This research introduces a time-aware deep reinforcement learning framework designed to enhance dynamic multi-agent perception, enabling improved decision-making and coordination among agents in complex environments.",
     tags: [ "Deep Reinforcement Learning", "Multi-Agent Systems", "Time Awareness" ],
   },
-  {
-    id: 4,
-    title:
-      "Impact of Colormap Selection on Deep Learning Predictions using Wavelet Scalograms for Flow Regime Identification",
-    subtitle: "",
-    description:
-      "This research investigates the effect of colormap selection on deep learning model predictions, specifically using wavelet scalograms for flow regime identification.",
-    tags: ["Deep Learning", "Wavelet Transform", "Colormap Selection", "Flow Regimes"],
-  },
+  
 ];
 
 const Publications: FC = () => {

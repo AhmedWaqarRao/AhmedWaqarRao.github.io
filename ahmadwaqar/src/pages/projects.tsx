@@ -12,6 +12,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title:
+      "Impact of Colormap Selection on Deep Learning Predictions using Wavelet Scalograms for Flow Regime Identification",
+
+    description:
+      "This research investigates the effect of colormap selection on deep learning model predictions, specifically using wavelet scalograms for flow regime identification.",
+    // tags: ["Deep Learning", "Wavelet Transform", "Colormap Selection", "Flow Regimes"],
+  },
+  {
     title: "Efficient Real-Time Dynamic Pruning Techniques for Optimizing Target Detection Models in UAVs",
     period: "Jul 2025",
     institution: "GitHub Project",
@@ -124,93 +132,93 @@ const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Data_Science_Project",
   },
   {
-  title: "Design and Development of Olive Pitting and Grading Machine",
-  period: "Aug 2024",
-  description:
-    "Developed a semi-automated machine for grading and pitting olives. Designed and implemented mechanisms to optimize olive oil production and reduce dependency on imports.",
-  github:
-    "https://github.com/AhmedWaqarRao/Design-and-Development-of-Olive-Pitting-and-Grading-Machine",
-},
-{
-  title: "Training YOLOv6 on Custom Data",
-  period: "Aug 2024",
-  description:
-    "Trained YOLOv6 object detection framework on a custom dataset. Focused on dataset preparation, model fine-tuning, and achieving higher detection accuracy for real-world use cases.",
-  github:
-    "https://github.com/AhmedWaqarRao/Training_YOLOv6_on-Custom_Data-",
-},
-{
-  title: "Enigma Machine Project",
-  period: "Aug 2024",
-  description:
-    "Implemented a simulator of the Enigma cipher machine using C++. The project emulates historical encryption and decryption methods for secure communication during WWII.",
-  github:
-    "https://github.com/AhmedWaqarRao/Enigma-Machine-Project",
-},
-{
-  title: "YOLOv7: State-of-the-Art Real-Time Object Detector",
-  period: "Jun 2024",
-  description:
-    "Implemented YOLOv7, a real-time object detection model that integrates trainable bag-of-freebies techniques. Enhanced detection accuracy and speed for diverse computer vision tasks.",
-  github:
-    "https://github.com/AhmedWaqarRao/yolov7",
-},
-{
-  title: "YOLOv6: Single-Stage Object Detection Framework",
-  period: "Jun 2024",
-  description:
-    "Worked with YOLOv6, a single-stage object detection framework tailored for industrial applications, optimizing real-time performance and accuracy.",
-  github:
-    "https://github.com/AhmedWaqarRao/YOLOv6",
-},
-{
-  title: "LabelImg (Extended via Label Studio)",
-  period: "Jun 2024",
-  description:
-    "Explored and integrated LabelImg, a popular image annotation tool, into the Label Studio ecosystem. Used for bounding box annotations in computer vision projects.",
-  github:
-    "https://github.com/AhmedWaqarRao/labelImg",
-},
-{
-  title: "YOLOv10: Real-Time End-to-End Object Detection",
-  period: "Jun 2024",
-  description:
-    "Implemented YOLOv10 for real-time end-to-end object detection. Achieved improvements in inference speed and detection accuracy over prior YOLO versions.",
-  github:
-    "https://github.com/AhmedWaqarRao/yolov10",
-},
-{
-  title: "Tic Tac Toe Game (Python)",
-  period: "May 2024",
-  description:
-    "Developed a command-line Tic Tac Toe game in Python. Implemented interactive player moves, win/lose detection, and replay functionality.",
-  github:
-    "https://github.com/AhmedWaqarRao/-Tic-Tac-Toe-game-using-Python-Language-",
-},
-{
-  title: "Simple User Interaction Small Game",
-  period: "May 2024",
-  description:
-    "Built a simple Python-based interactive game where users can replace list positions with custom values. Focused on user input validation, loops, and dynamic list updates.",
-  github:
-    "https://github.com/AhmedWaqarRao/Simple-User-Interaction-Small-Game-",
-},
-{
-  title: "Data Annotation Projects",
-  period: "Apr 2024",
-  description:
-    "Created a collection of data annotation projects covering bounding boxes, segmentation, and structured labeling. Contributed to machine learning dataset preparation and improved data quality for training models.",
-  github:
-    "https://github.com/AhmedWaqarRao/Data-Annotaion-Projects",
-},
-{
-  title: "EuroSAT: Land Use and Land Cover Classification with Sentinel-2",
-  period: "Mar 2023",
-  description:
-    "Worked with EuroSAT dataset based on Sentinel-2 satellite images, covering 13 spectral bands and 10 classes with 27,000 labeled samples. Achieved 98.57% accuracy using deep CNNs for land cover classification and map improvements.",
-  github:
-    "https://github.com/AhmedWaqarRao/EuroSAT",
-},
+    title: "Design and Development of Olive Pitting and Grading Machine",
+    period: "Aug 2024",
+    description:
+      "Developed a semi-automated machine for grading and pitting olives. Designed and implemented mechanisms to optimize olive oil production and reduce dependency on imports.",
+    github:
+      "https://github.com/AhmedWaqarRao/Design-and-Development-of-Olive-Pitting-and-Grading-Machine",
+  },
+  {
+    title: "Training YOLOv6 on Custom Data",
+    period: "Aug 2024",
+    description:
+      "Trained YOLOv6 object detection framework on a custom dataset. Focused on dataset preparation, model fine-tuning, and achieving higher detection accuracy for real-world use cases.",
+    github:
+      "https://github.com/AhmedWaqarRao/Training_YOLOv6_on-Custom_Data-",
+  },
+  {
+    title: "Enigma Machine Project",
+    period: "Aug 2024",
+    description:
+      "Implemented a simulator of the Enigma cipher machine using C++. The project emulates historical encryption and decryption methods for secure communication during WWII.",
+    github:
+      "https://github.com/AhmedWaqarRao/Enigma-Machine-Project",
+  },
+  {
+    title: "YOLOv7: State-of-the-Art Real-Time Object Detector",
+    period: "Jun 2024",
+    description:
+      "Implemented YOLOv7, a real-time object detection model that integrates trainable bag-of-freebies techniques. Enhanced detection accuracy and speed for diverse computer vision tasks.",
+    github:
+      "https://github.com/AhmedWaqarRao/yolov7",
+  },
+  {
+    title: "YOLOv6: Single-Stage Object Detection Framework",
+    period: "Jun 2024",
+    description:
+      "Worked with YOLOv6, a single-stage object detection framework tailored for industrial applications, optimizing real-time performance and accuracy.",
+    github:
+      "https://github.com/AhmedWaqarRao/YOLOv6",
+  },
+  {
+    title: "LabelImg (Extended via Label Studio)",
+    period: "Jun 2024",
+    description:
+      "Explored and integrated LabelImg, a popular image annotation tool, into the Label Studio ecosystem. Used for bounding box annotations in computer vision projects.",
+    github:
+      "https://github.com/AhmedWaqarRao/labelImg",
+  },
+  {
+    title: "YOLOv10: Real-Time End-to-End Object Detection",
+    period: "Jun 2024",
+    description:
+      "Implemented YOLOv10 for real-time end-to-end object detection. Achieved improvements in inference speed and detection accuracy over prior YOLO versions.",
+    github:
+      "https://github.com/AhmedWaqarRao/yolov10",
+  },
+  {
+    title: "Tic Tac Toe Game (Python)",
+    period: "May 2024",
+    description:
+      "Developed a command-line Tic Tac Toe game in Python. Implemented interactive player moves, win/lose detection, and replay functionality.",
+    github:
+      "https://github.com/AhmedWaqarRao/-Tic-Tac-Toe-game-using-Python-Language-",
+  },
+  {
+    title: "Simple User Interaction Small Game",
+    period: "May 2024",
+    description:
+      "Built a simple Python-based interactive game where users can replace list positions with custom values. Focused on user input validation, loops, and dynamic list updates.",
+    github:
+      "https://github.com/AhmedWaqarRao/Simple-User-Interaction-Small-Game-",
+  },
+  {
+    title: "Data Annotation Projects",
+    period: "Apr 2024",
+    description:
+      "Created a collection of data annotation projects covering bounding boxes, segmentation, and structured labeling. Contributed to machine learning dataset preparation and improved data quality for training models.",
+    github:
+      "https://github.com/AhmedWaqarRao/Data-Annotaion-Projects",
+  },
+  {
+    title: "EuroSAT: Land Use and Land Cover Classification with Sentinel-2",
+    period: "Mar 2023",
+    description:
+      "Worked with EuroSAT dataset based on Sentinel-2 satellite images, covering 13 spectral bands and 10 classes with 27,000 labeled samples. Achieved 98.57% accuracy using deep CNNs for land cover classification and map improvements.",
+    github:
+      "https://github.com/AhmedWaqarRao/EuroSAT",
+  },
 
   {
     title: "Design and Development of Olive Grading Mechanism & Pitting Machine (Final Year Project)",
