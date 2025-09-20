@@ -30,10 +30,6 @@ export default function Skills() {
             title="Technical Skills"
             icon={<Code size={22} className="text-blue-600" />}
             items={[
-              "Pattern Classification",
-              "Filtering",
-              "Cleaning",
-              "Time-frequency Analysis",
               "Machine Learning",
               "Feature Extraction",
               "Feature Selection",

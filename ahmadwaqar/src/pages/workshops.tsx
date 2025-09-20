@@ -12,6 +12,13 @@ interface Event {
 }
 
 const workshops: Event[] = [
+  {
+    title: "Pakistan-China Commerce and Trade Alliance",
+    issuer: "PCCAI",
+    issueDate: "2024",
+    skills: ["International Trade", "Business Development", "Economic Partnerships"],
+    imageUrl: "/Cpec.jpg",
+  },
   
   {
     title: "NPU Cultural Festival",
@@ -89,9 +96,9 @@ const conferences: Event[] = [
 const WorkshopsConferences: FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<number | null>(null);
-  const [tab, setTab] = useState<"workshops" | "conferences">("workshops");
+  const [tab, setTab] = useState<"conferences" | "workshops">("conferences");
 
-  const data = tab === "workshops" ? workshops : conferences;
+  const data = tab === "conferences" ? conferences : workshops;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 p-4 md:p-10">
@@ -103,18 +110,8 @@ const WorkshopsConferences: FC = () => {
         {/* Tabs */}
         <div className="flex justify-center mb-10">
           <button
-            onClick={() => setTab("workshops")}
-            className={`px-6 py-2 rounded-l-full font-semibold ${
-              tab === "workshops"
-                ? "bg-emerald-600 text-white"
-                : "bg-emerald-100 text-emerald-700 hover:bg-emerald-200"
-            }`}
-          >
-            🏫 Workshops
-          </button>
-          <button
             onClick={() => setTab("conferences")}
-            className={`px-6 py-2 rounded-r-full font-semibold ${
+            className={`px-6 py-2 rounded-l-full font-semibold ${
               tab === "conferences"
                 ? "bg-emerald-600 text-white"
                 : "bg-emerald-100 text-emerald-700 hover:bg-emerald-200"
@@ -122,6 +119,18 @@ const WorkshopsConferences: FC = () => {
           >
             🌍 Conferences
           </button>
+          <button
+            onClick={() => setTab("workshops")}
+            className={`px-6 py-2 rounded-r-full font-semibold ${
+              tab === "workshops"
+                ? "bg-emerald-600 text-white"
+                : "bg-emerald-100 text-emerald-700 hover:bg-emerald-200"
+            }`}
+          >
+            
+            🏫 Workshops
+          </button>
+          
         </div>
 
         {/* Grid */}
