@@ -10,7 +10,7 @@ const Sidebar: FC = () => {
     { name: "Education", path: "/education" },
     { name: "Experience", path: "/experience" },
     { name: "Skills", path: "/skills" },
-    { name: "Workshops/Conferences", path: "/workshops" },
+    { name: "Conferences/Workshops", path: "/workshops" },
     { name: "Projects", path: "/projects" },
     { name: "Publications", path: "/publications" },
     { name: "Certifications", path: "/certifications" },
