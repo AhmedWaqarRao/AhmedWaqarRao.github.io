@@ -33,7 +33,7 @@ const Home: FC = () => {
         <h2 className="text-2xl font-bold mb-3">About Me</h2>
         <p className="text-gray-700 leading-relaxed">
           I am a passionate researcher and engineer focused on applying my expertise in{" "}
-          <span className="font-semibold">Deep Learning, Machine Learning, and Computer Vision</span> 
+          <span className="font-semibold">Deep Learning, Machine Learning, and Computer Vision </span> 
           to optimize Unmanned Aerial Vehicles (UAVs) for resource-constrained edge environments. 🚁 
           My current research involves developing edge-based adaptive selection methods for efficient UAV target detection, 
           tackling critical challenges like computational limitations, energy efficiency, and latency to enable real-time{" "}
