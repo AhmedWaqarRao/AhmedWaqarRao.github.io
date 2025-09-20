@@ -52,6 +52,34 @@ const Home: FC = () => {
           AI solutions that bridge academic research with tangible, real-world impact.
         </p>
       </section>
+      {/* Language Proficiency Section */}
+<section className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white rounded-2xl shadow-lg p-6">
+  <h2 className="text-2xl font-bold mb-4">🌍 Language Proficiency</h2>
+  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* English */}
+    <div className="p-4 bg-white/10 rounded-xl shadow hover:bg-white/20 transition">
+      <h3 className="font-semibold text-lg">🇬🇧 English</h3>
+      <p className="mt-2 text-sm">Fluent – Academic, Professional, and Public Speaking</p>
+    </div>
+
+    {/* Chinese HSK-3 */}
+    <div className="p-4 bg-white rounded-xl shadow-lg border-2 border-yellow-400 transform hover:-translate-y-1 transition">
+      <h3 className="font-semibold text-lg flex items-center gap-2 text-red-600">
+        🇨🇳 Chinese <span className="text-sm bg-yellow-200 px-2 py-0.5 rounded-full font-medium">HSK-3</span>
+      </h3>
+      <p className="mt-2 text-gray-700 text-sm">
+        Proficient in daily communication and academic interaction. Actively improving towards advanced HSK levels.
+      </p>
+    </div>
+
+    {/* Urdu */}
+    <div className="p-4 bg-white/10 rounded-xl shadow hover:bg-white/20 transition">
+      <h3 className="font-semibold text-lg">🇵🇰 Urdu</h3>
+      <p className="mt-2 text-sm">Native – Strong cultural and professional communication</p>
+    </div>
+  </div>
+</section>
+
       {/* Expertise Section */}
 <section className="bg-white rounded-2xl shadow p-6">
   <h2 className="text-2xl font-bold mb-6">⚡ Expertise</h2>
@@ -61,7 +89,7 @@ const Home: FC = () => {
       "Artificial Intelligence: Machine Learning, Deep Learning, LLMs, Prompt Engineering and many more.",
       "Software: Google Colab, Jupyter Notebook, Spyder, VS Code and many more.",
       "Frameworks & Libraries: PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face Transformers, OpenCV, Ultralytics.",
-      "Programming Languages: C++, Python",
+      "Programming Languages: C++, Python, Assembly Language, Matlab",
     ].map((exp, idx) => (
       <li key={idx} className="leading-relaxed">{exp}</li>
     ))}
@@ -72,7 +100,7 @@ const Home: FC = () => {
 <section className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl shadow p-6">
   <h2 className="text-2xl font-bold mb-6">🏅 Certifications</h2>
   <div className="flex flex-wrap gap-3">
-    {["IELTS", "Python Programming", "Deep Learning", "Computer Vision"].map((cert) => (
+    {["Python Programming", "Deep Learning", "Computer Vision",'Data Analytics','Data Science','Efficient Computing','GANS'].map((cert) => (
       <span
         key={cert}
         className="bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium shadow hover:bg-white/30 transition"
@@ -83,7 +111,7 @@ const Home: FC = () => {
   </div>
 </section>
 
-{/* Technical Skills Section */}
+{/* Technical Skills Section
 <section className="bg-white rounded-2xl shadow p-6">
   <h2 className="text-2xl font-bold mb-6">🧑‍💻 Technical Skills</h2>
   <div className="flex flex-wrap gap-3">
@@ -96,7 +124,7 @@ const Home: FC = () => {
       </span>
     ))}
   </div>
-</section>
+</section> */}
 
 {/* Interests Section */}
 <section className="bg-gradient-to-r from-teal-500 to-cyan-600 text-white rounded-2xl shadow p-6">
@@ -132,184 +160,7 @@ const Home: FC = () => {
 </section>
 
 
-{/* Skills Section */}
-<section className="bg-white rounded-2xl shadow p-6">
-  <h2 className="text-2xl font-bold mb-6">🛠 Skills</h2>
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-    {/* Technical Skills */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-blue-700 font-semibold">
-        <Code size={20} /> Technical Skills
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {[
-          "Pattern Classification",
-          "Signal Processing",
-          "Filtering",
-          "Cleaning",
-          "Time-frequency Analysis",
-          "Machine Learning",
-          "Feature Extraction",
-          "Feature Selection",
-          "Classification",
-          "Deep Learning",
-          "CNN",
-          "Transformers",
-          "YOLO",
-        ].map((skill) => (
-          <span
-            key={skill}
-            className="bg-blue-100 text-blue-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-blue-200 transition"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
 
-    {/* Technical Languages & Software */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-green-700 font-semibold">
-        <Wrench size={20} /> Languages & Software
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {[
-          "C++",
-          "C",
-          "Python",
-          "MATLAB",
-          "NI Multisim",
-          "Proteus",
-          "MPLABX",
-          "LT Spice",
-          "Simulink",
-        ].map((tool) => (
-          <span
-            key={tool}
-            className="bg-green-100 text-green-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-green-200 transition"
-          >
-            {tool}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Database & Frameworks */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-indigo-700 font-semibold">
-        <BookOpen size={20} /> Databases & Frameworks
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {["MongoDB", "SQL", "Flask", "Docker"].map((db) => (
-          <span
-            key={db}
-            className="bg-indigo-100 text-indigo-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-indigo-200 transition"
-          >
-            {db}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Industry Skills */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-emerald-700 font-semibold">
-        <Briefcase size={20} /> Industry Skills
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {[
-          "Computer Vision",
-          "Object Detection",
-          "Segmentation",
-          "Tracking",
-          "Data Science",
-          "AI",
-          "ML",
-          "NLP",
-          "DL",
-          "Statistics",
-          "Regression",
-          "Neural Networks",
-        ].map((ind) => (
-          <span
-            key={ind}
-            className="bg-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-emerald-200 transition"
-          >
-            {ind}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Interpersonal Skills */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-orange-700 font-semibold">
-        <Users size={20} /> Interpersonal Skills
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {[
-          "Collaboration",
-          "Problem Solving",
-          "Critical Thinking",
-          "Adaptability",
-          "Teamwork",
-          "Leadership",
-        ].map((soft) => (
-          <span
-            key={soft}
-            className="bg-orange-100 text-orange-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-orange-200 transition"
-          >
-            {soft}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Language Skills */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-purple-700 font-semibold">
-        <Languages size={20} /> Language Skills
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {["English (Fluent)", "Chinese (HSK-3)", "Urdu (Native)"].map(
-          (lang) => (
-            <span
-              key={lang}
-              className="bg-purple-100 text-purple-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-purple-200 transition"
-            >
-              {lang}
-            </span>
-          )
-        )}
-      </div>
-    </div>
-
-    {/* Other Software */}
-    <div className="p-4 border rounded-xl shadow-sm hover:shadow-md transition">
-      <div className="flex items-center gap-2 mb-3 text-pink-700 font-semibold">
-        <Code size={20} /> Other Software
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {[
-          "Adobe Photoshop",
-          "Adobe Illustrator",
-          "Adobe After Effects",
-          "Filmora",
-          "Adobe Character Animator",
-          "MS Office",
-        ].map((sw) => (
-          <span
-            key={sw}
-            className="bg-pink-100 text-pink-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-pink-200 transition"
-          >
-            {sw}
-          </span>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
 
 {/* Hobbies Section */}
 <section className="bg-gradient-to-r from-pink-500 to-rose-600 text-white rounded-2xl shadow p-6">
@@ -385,45 +236,97 @@ const Home: FC = () => {
   </div>
 </section>
 {/* References Section */}
-      <section className="bg-white rounded-2xl shadow p-8">
-        <h2 className="text-2xl font-bold mb-6">📌 References</h2>
-        <ul className="space-y-6">
-          {[
-            {
-              name: "Yu Zhang",
-              role: "Professor at Dept. of AI Computing System, Northwestern Polytechnical University, China",
-              relation: "🎓 Academic Mentor",
-              color: "blue",
-            },
-            {
-              name: "Dr. Umar Shahbaz Khan",
-              role: "Tenured Associate Professor / Project Director NCRA, NUST, Pakistan",
-              relation: "🎓 Former Teacher & Research Supervisor",
-              color: "green",
-            },
-            {
-              name: "Dr. Hamid Jabbar",
-              role: "Associate Professor & Head of Mechatronics Engineering, NUST, Pakistan",
-              relation: "🎓 Department Head & Mentor",
-              color: "indigo",
-            },
-          ].map((ref) => (
-            <li
-              key={ref.name}
-              className="border-l-4 pl-4 hover:shadow transition rounded"
-              style={{ borderColor: `var(--tw-color-${ref.color}-500)` }}
+<section className="bg-white rounded-2xl shadow p-8">
+  <h2 className="text-2xl font-bold mb-6">📌 References</h2>
+  <ul className="space-y-6">
+    {[
+      {
+        name: "Yu Zhang",
+        title: "Professor",
+        affiliation:
+          "Department of AI Computing System, School of Computer Science, Northwestern Polytechnical University",
+        address:
+          "1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China",
+        email: "zhangyu@nwpu.edu.cn",
+        phone: "(+86) 13891997511",
+        website: "https://yuzhang-nwpu.github.io/yuzhang/",
+        relation: "🎓 Academic Mentor",
+        color: "blue",
+      },
+      {
+        name: "Umar Shahbaz Khan",
+        title: "Tenured Associate Professor / Project Director NCRA",
+        affiliation:
+          "Department of Mechatronics Engineering, College of Electrical & Mechanical Engineering, NUST",
+        address: "Peshawar Road, Rawalpindi 46000, Pakistan",
+        email: "u.shahbaz@ceme.nust.edu.pk",
+        phone: "(+92) 3005533775",
+        relation: "🎓 Former Teacher & Research Supervisor",
+        color: "green",
+      },
+      {
+        name: "Hamid Jabbar",
+        title: "Head of Department & Associate Professor",
+        affiliation:
+          "Mechatronics Engineering Department, College of Electrical & Mechanical Engineering, NUST",
+        address: "Peshawar Road, Rawalpindi 46000, Pakistan",
+        email: "hamid.jabbar@ceme.nust.edu.pk",
+        phone: "(+92) 3005274026",
+        relation: "🎓 Department Head & Mentor",
+        color: "indigo",
+      },
+    ].map((ref) => (
+      <li
+        key={ref.name}
+        className="border-l-4 pl-4 hover:shadow transition rounded"
+        style={{ borderColor: `var(--tw-color-${ref.color}-500)` }}
+      >
+        <h3 className={`text-lg font-semibold text-${ref.color}-700`}>
+          {ref.name}
+        </h3>
+        <p className="text-sm text-gray-600">{ref.title}</p>
+        <p className="text-sm text-gray-600">{ref.affiliation}</p>
+        <p className="text-sm text-gray-600">{ref.address}</p>
+
+        <div className="mt-2 space-y-1 text-sm">
+          <p>
+            <span className="font-medium text-gray-800">📧 Email:</span>{" "}
+            <a
+              href={`mailto:${ref.email}`}
+              className="text-blue-600 hover:underline"
             >
-              <h3 className={`text-lg font-semibold text-${ref.color}-700`}>
-                {ref.name}
-              </h3>
-              <p className="text-sm text-gray-600">{ref.role}</p>
-              <p className="mt-1 text-sm font-medium text-gray-800">
-                {ref.relation}
-              </p>
-            </li>
-          ))}
-        </ul>
-      </section>
+              {ref.email}
+            </a>
+          </p>
+          <p>
+            <span className="font-medium text-gray-800">📞 Phone:</span>{" "}
+            <a href={`tel:${ref.phone}`} className="text-blue-600 hover:underline">
+              {ref.phone}
+            </a>
+          </p>
+          {ref.website && (
+            <p>
+              <span className="font-medium text-gray-800">🌐 Website:</span>{" "}
+              <a
+                href={ref.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                {ref.website}
+              </a>
+            </p>
+          )}
+        </div>
+
+        <p className="mt-2 text-sm font-medium text-gray-800">
+          {ref.relation}
+        </p>
+      </li>
+    ))}
+  </ul>
+</section>
+
 
 
       {/* Contact Section */}

@@ -8,6 +8,7 @@ import Experience from "./pages/experience";
 import Recommendations from "./pages/recommendations";
 import Publications from "./pages/publications";
 import Education from "./pages/education";
+import Skills from "./pages/skills";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/recommendations" element={<Recommendations />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/education" element={<Education/>} />
+            <Route path="skills" element={<Skills/>} />
           </Routes>
         </main>
       </div>
