@@ -147,17 +147,30 @@ function SkillCard({
   items: string[];
   color: string;
 }) {
+  // Color mapping to handle dynamic classes
+  const colorMap: Record<string, { text: string; bg: string }> = {
+    blue: { text: "text-blue-700", bg: "bg-blue-100" },
+    green: { text: "text-green-700", bg: "bg-green-100" },
+    indigo: { text: "text-indigo-700", bg: "bg-indigo-100" },
+    emerald: { text: "text-emerald-700", bg: "bg-emerald-100" },
+    orange: { text: "text-orange-700", bg: "bg-orange-100" },
+    purple: { text: "text-purple-700", bg: "bg-purple-100" },
+    pink: { text: "text-pink-700", bg: "bg-pink-100" },
+  };
+
+  const colorClasses = colorMap[color] || colorMap.blue;
+
   return (
     <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
       <div className="flex items-center gap-2 mb-4">
         {icon}
-        <h2 className={`font-semibold text-lg text-${color}-700`}>{title}</h2>
+        <h2 className={`font-semibold text-lg ${colorClasses.text}`}>{title}</h2>
       </div>
       <div className="flex flex-wrap gap-2">
         {items.map((item) => (
           <span
             key={item}
-            className={`bg-${color}-100 text-${color}-700 text-xs font-medium px-3 py-1 rounded-full`}
+            className={`${colorClasses.bg} ${colorClasses.text} text-xs font-medium px-3 py-1 rounded-full`}
           >
             {item}
           </span>
