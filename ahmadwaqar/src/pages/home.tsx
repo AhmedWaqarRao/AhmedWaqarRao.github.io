@@ -52,6 +52,98 @@ const Home: FC = () => {
           AI solutions that bridge academic research with tangible, real-world impact.
         </p>
       </section>
+      {/* References Section */}
+<section className="bg-white rounded-2xl shadow p-8">
+  <h2 className="text-2xl font-bold mb-6">📌 References</h2>
+  <ul className="space-y-6">
+    {[
+      {
+        name: "Yu Zhang",
+        title: "Professor",
+        affiliation:
+          "Department of AI Computing System, School of Computer Science, Northwestern Polytechnical University",
+        address:
+          "1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China",
+        email: "zhangyu@nwpu.edu.cn",
+        phone: "(+86) 13891997511",
+        website: "https://yuzhang-nwpu.github.io/yuzhang/",
+        relation: "🎓 Academic Mentor",
+        color: "blue",
+      },
+      {
+        name: "Umar Shahbaz Khan",
+        title: "Tenured Associate Professor / Project Director NCRA",
+        affiliation:
+          "Department of Mechatronics Engineering, College of Electrical & Mechanical Engineering, NUST",
+        address: "Peshawar Road, Rawalpindi 46000, Pakistan",
+        email: "u.shahbaz@ceme.nust.edu.pk",
+        phone: "(+92) 3005533775",
+        relation: "🎓 Former Teacher & Research Supervisor",
+        color: "green",
+      },
+      {
+        name: "Hamid Jabbar",
+        title: "Head of Department & Associate Professor",
+        affiliation:
+          "Mechatronics Engineering Department, College of Electrical & Mechanical Engineering, NUST",
+        address: "Peshawar Road, Rawalpindi 46000, Pakistan",
+        email: "hamid.jabbar@ceme.nust.edu.pk",
+        phone: "(+92) 3005274026",
+        relation: "🎓 Department Head & Mentor",
+        color: "indigo",
+      },
+    ].map((ref) => (
+      <li
+        key={ref.name}
+        className="border-l-4 pl-4 hover:shadow transition rounded"
+        style={{ borderColor: `var(--tw-color-${ref.color}-500)` }}
+      >
+        <h3 className={`text-lg font-semibold text-${ref.color}-700`}>
+          {ref.name}
+        </h3>
+        <p className="text-sm text-gray-600">{ref.title}</p>
+        <p className="text-sm text-gray-600">{ref.affiliation}</p>
+        <p className="text-sm text-gray-600">{ref.address}</p>
+
+        <div className="mt-2 space-y-1 text-sm">
+          <p>
+            <span className="font-medium text-gray-800">📧 Email:</span>{" "}
+            <a
+              href={`mailto:${ref.email}`}
+              className="text-blue-600 hover:underline"
+            >
+              {ref.email}
+            </a>
+          </p>
+          <p>
+            <span className="font-medium text-gray-800">📞 Phone:</span>{" "}
+            <a href={`tel:${ref.phone}`} className="text-blue-600 hover:underline">
+              {ref.phone}
+            </a>
+          </p>
+          {ref.website && (
+            <p>
+              <span className="font-medium text-gray-800">🌐 Website:</span>{" "}
+              <a
+                href={ref.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                {ref.website}
+              </a>
+            </p>
+          )}
+        </div>
+
+        <p className="mt-2 text-sm font-medium text-gray-800">
+          {ref.relation}
+        </p>
+      </li>
+    ))}
+  </ul>
+</section>
+
       {/* Language Proficiency Section */}
 <section className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white rounded-2xl shadow-lg p-6">
   <h2 className="text-2xl font-bold mb-4">🌍 Language Proficiency</h2>
@@ -235,97 +327,7 @@ const Home: FC = () => {
 
   </div>
 </section>
-{/* References Section */}
-<section className="bg-white rounded-2xl shadow p-8">
-  <h2 className="text-2xl font-bold mb-6">📌 References</h2>
-  <ul className="space-y-6">
-    {[
-      {
-        name: "Yu Zhang",
-        title: "Professor",
-        affiliation:
-          "Department of AI Computing System, School of Computer Science, Northwestern Polytechnical University",
-        address:
-          "1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China",
-        email: "zhangyu@nwpu.edu.cn",
-        phone: "(+86) 13891997511",
-        website: "https://yuzhang-nwpu.github.io/yuzhang/",
-        relation: "🎓 Academic Mentor",
-        color: "blue",
-      },
-      {
-        name: "Umar Shahbaz Khan",
-        title: "Tenured Associate Professor / Project Director NCRA",
-        affiliation:
-          "Department of Mechatronics Engineering, College of Electrical & Mechanical Engineering, NUST",
-        address: "Peshawar Road, Rawalpindi 46000, Pakistan",
-        email: "u.shahbaz@ceme.nust.edu.pk",
-        phone: "(+92) 3005533775",
-        relation: "🎓 Former Teacher & Research Supervisor",
-        color: "green",
-      },
-      {
-        name: "Hamid Jabbar",
-        title: "Head of Department & Associate Professor",
-        affiliation:
-          "Mechatronics Engineering Department, College of Electrical & Mechanical Engineering, NUST",
-        address: "Peshawar Road, Rawalpindi 46000, Pakistan",
-        email: "hamid.jabbar@ceme.nust.edu.pk",
-        phone: "(+92) 3005274026",
-        relation: "🎓 Department Head & Mentor",
-        color: "indigo",
-      },
-    ].map((ref) => (
-      <li
-        key={ref.name}
-        className="border-l-4 pl-4 hover:shadow transition rounded"
-        style={{ borderColor: `var(--tw-color-${ref.color}-500)` }}
-      >
-        <h3 className={`text-lg font-semibold text-${ref.color}-700`}>
-          {ref.name}
-        </h3>
-        <p className="text-sm text-gray-600">{ref.title}</p>
-        <p className="text-sm text-gray-600">{ref.affiliation}</p>
-        <p className="text-sm text-gray-600">{ref.address}</p>
 
-        <div className="mt-2 space-y-1 text-sm">
-          <p>
-            <span className="font-medium text-gray-800">📧 Email:</span>{" "}
-            <a
-              href={`mailto:${ref.email}`}
-              className="text-blue-600 hover:underline"
-            >
-              {ref.email}
-            </a>
-          </p>
-          <p>
-            <span className="font-medium text-gray-800">📞 Phone:</span>{" "}
-            <a href={`tel:${ref.phone}`} className="text-blue-600 hover:underline">
-              {ref.phone}
-            </a>
-          </p>
-          {ref.website && (
-            <p>
-              <span className="font-medium text-gray-800">🌐 Website:</span>{" "}
-              <a
-                href={ref.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                {ref.website}
-              </a>
-            </p>
-          )}
-        </div>
-
-        <p className="mt-2 text-sm font-medium text-gray-800">
-          {ref.relation}
-        </p>
-      </li>
-    ))}
-  </ul>
-</section>
 
 
 
