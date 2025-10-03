@@ -59,7 +59,7 @@ const conferences: Event[] = [
     imageUrl: "/certifications/Belt & Road Academic Forum Certificate.jpg",
     location: "Xi’an, China",
     details:
-      "The First Belt and Road Academic Forum of Engineering and Technology promoted global cooperation in engineering and technology among Belt and Road Initiative nations.",
+      "The First Belt and Road Academic Forum of Engineering and Technology aimed to promote global cooperation in engineering and technology among the nations participating in the Belt and Road Initiative. It sought to address global issues by utilizing cooperative knowledge, cutting-edge research, and technology breakthroughs. The forum aimed to fortify collaborations between academia and business to promote economic expansion and sustainable development.",
   },
   {
     title: "Second Belt & Road Academic Forum of Engineering Science and Technology",
@@ -69,7 +69,7 @@ const conferences: Event[] = [
     imageUrl: "/secondBeltandRoad.jpg",
     location: "Xi’an, China",
     details:
-      "Insightful discussion with Associate Professor Huanjie Tao on LLMs, DNNs, and Neural Network Models.",
+      "The Second Belt and Road Academic Forum on Engineering and Technology served as a platform to deepen international scientific collaboration among participating nations. Building on the inaugural event, this iteration specifically focused on harnessing interdisciplinary research and technological innovations to address transnational challenges. The forum facilitated strategic partnerships between academic institutions and industry leaders to accelerate sustainable socioeconomic development across the Belt and Road network.",
   },
   {
     title: "2024 China (Xi’an) International Low-Altitude Economic Development Conference",
@@ -92,6 +92,7 @@ const conferences: Event[] = [
       "Showcased strong bilateral relations between Pakistan and China under CPEC Phase II.",
   },
 ];
+
 
 const WorkshopsConferences: FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

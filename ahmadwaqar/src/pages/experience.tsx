@@ -11,7 +11,9 @@ interface ExperienceItem {
   end: string;
   description: string;
   skills?: string[];
+  certificate?: string; 
 }
+
 
 const experiences: ExperienceItem[] = [
   {
@@ -66,37 +68,39 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    role: "Project Manager",
-    company: "Simplicity Concept Nigeria",
-    type: "Contract",
-    location: "Lagos State, Nigeria · Remote",
-    start: "Sep 2021",
-    end: "Feb 2024",
-    description:
-      "Oversaw the Oyato Shopping App development. Responsible for strategic planning, stakeholder communication, technical leadership, and ensuring alignment with organizational goals.",
-    skills: [
-      "Project Planning",
-      "Software Project Management",
-      "Operations Management",
-      "Business Development",
-    ],
-  },
+  role: "Project Manager",
+  company: "Simplicity Concept Nigeria",
+  type: "Contract",
+  location: "Lagos State, Nigeria · Remote",
+  start: "Sep 2021",
+  end: "Feb 2024",
+  description:
+    "Oversaw the Oyato Shopping App development. Responsible for strategic planning, stakeholder communication, technical leadership, and ensuring alignment with organizational goals.",
+  skills: [
+    "Project Planning",
+    "Software Project Management",
+    "Operations Management",
+    "Business Development",
+  ],
+  certificate: "/certifications/Simplicity.pdf", 
+},
   {
-    role: "Senior Data/Image Annotation Specialist",
-    company: "DataVision",
-    type: "Contract",
-    location: "Lahore, Pakistan · Remote",
-    start: "Jan 2023",
-    end: "Jun 2023",
-    description:
-      "Created 2D/3D bounding boxes, semantic segmentation, categorization, and labeling using V7 Darwin. Ensured quality assurance and efficient data curation.",
-    skills: [
-      "Annotation",
-      "Data Science",
-      "Image Processing",
-      "Quality Assurance",
-    ],
-  },
+  role: "Senior Data/Image Annotation Specialist",
+  company: "DataVision",
+  type: "Contract",
+  location: "Lahore, Pakistan · Remote",
+  start: "Jan 2023",
+  end: "Jun 2023",
+  description:
+    "Created 2D/3D bounding boxes, semantic segmentation, categorization, and labeling using V7 Darwin. Ensured quality assurance and efficient data curation.",
+  skills: [
+    "Annotation",
+    "Data Science",
+    "Image Processing",
+    "Quality Assurance",
+  ],
+  certificate: "/certifications/Datavision.pdf",
+},
    {
     role: "Social Worker & Coordinator",
     company: "Sahara Humanitarian Trust & NUST CEME Initiatives",
@@ -127,19 +131,17 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    role: "Nestership Intern",
-    company: "Nestlé",
-    type: "Internship",
-    location: "Lahore District, Punjab, Pakistan · Remote",
-    start: "May 2023",
-    end: "May 2023",
-    description: "Awarded a certificate for Interview Success. Developed and shared expert tips for acing job interviews, including thorough company research, practicing common questions, and projecting confidence.",
-    skills: [
-      "Interview Preparation",
-      "Professional Development",
-      "Research",
-    ],
-  },
+  role: "Nestership Intern",
+  company: "Nestlé",
+  type: "Internship",
+  location: "Lahore District, Punjab, Pakistan · Remote",
+  start: "May 2023",
+  end: "May 2023",
+  description:
+    "Awarded a certificate for Interview Success. Developed and shared expert tips for acing job interviews, including thorough company research, practicing common questions, and projecting confidence.",
+  skills: ["Interview Preparation", "Professional Development", "Research"],
+  certificate: "/certifications/Nestle.jpg",
+},
   {
     role: "Event Volunteer & Coordinator",
     company: "NUST Volunteers Club & National Engineering Robotics Competition (NERC)",
@@ -210,6 +212,17 @@ const Experience: FC = () => {
                   ))}
                 </div>
               )}
+              {exp.certificate && (
+  <a
+    href={exp.certificate}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-3 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition"
+  >
+    View Certificate
+  </a>
+)}
+
             </div>
           </div>
         ))}

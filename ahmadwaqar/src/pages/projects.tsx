@@ -20,6 +20,25 @@ const projects: Project[] = [
     // tags: ["Deep Learning", "Wavelet Transform", "Colormap Selection", "Flow Regimes"],
   },
   {
+    title:
+      "Passive-Two-Phase-Flow-Regime-Identification-based-on-Wavelet-Transform-Scalogram-and-Deep-Learning",
+    description:
+      "This research focuses on two-phase flow regime identification using wavelet transform scalograms combined with deep learning architectures for robust, accurate classification of complex flow patterns.",
+  },
+  {
+    title:
+      "Time Aware Deep Reinforcement Learning Framework for Dynamics Multi Agent Perception",
+    description:
+      "This research introduces a time-aware deep reinforcement learning framework designed to enhance dynamic multi-agent perception, enabling improved decision-making and coordination among agents in complex environments.",
+    
+  },
+  {
+    title:
+      "Impact of Colormap Selection on Deep Learning Predictions using Wavelet Scalograms for Flow Regime Identification",
+    description:
+      "This research investigates the effect of colormap selection on deep learning model predictions, specifically using wavelet scalograms for flow regime identification.",
+  },
+  {
     title: "Efficient Real-Time Dynamic Pruning Techniques for Optimizing Target Detection Models in UAVs",
     period: "Jul 2025",
     institution: "GitHub Project",

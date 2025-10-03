@@ -8,28 +8,32 @@ interface EducationItem {
   grade?: string;
   courses?: string[];
   logo?: string;
+  transcript?: string; // ✅ new field
 }
+
 
 const education: EducationItem[] = [
   {
-    institution: "Northwestern Polytechnical University, China",
-    degree: "Master in Science (MS), Computer Sciences and Technology",
-    period: "Aug 2023 - Jul 2026",
-    courses: [
-      "Chinese Language I",
-      "Chinese Language II",
-      "Mathematical Statistics",
-      "Matrix Theory",
-      "Brief Introduction of China",
-      "Computer Vision",
-      "Eye Tracking and Applications",
-      "Human-Computer Interaction",
-      "Computational Intelligence: Theory and Method",
-      "Pattern Classification",
-      "Advanced Operating Systems",
-      "Scientific Writing",
-    ],
-  },
+  institution: "Northwestern Polytechnical University, China",
+  degree: "Master in Science (MS), Computer Sciences and Technology",
+  period: "Aug 2023 - Jul 2026",
+  courses: [
+    "Chinese Language I",
+    "Chinese Language II",
+    "Mathematical Statistics",
+    "Matrix Theory",
+    "Brief Introduction of China",
+    "Computer Vision",
+    "Eye Tracking and Applications",
+    "Human-Computer Interaction",
+    "Computational Intelligence: Theory and Method",
+    "Pattern Classification",
+    "Advanced Operating Systems",
+    "Scientific Writing",
+  ],
+  transcript: "/certifications/ms.pdf", // ✅ add transcript file path
+},
+
   {
     institution:
       "National University of Sciences and Technology (NUST), Pakistan",
@@ -137,6 +141,17 @@ const EducationCard: FC<{ edu: EducationItem }> = ({ edu }) => {
           )}
         </div>
       )}
+      {edu.transcript && (
+  <a
+    href={edu.transcript}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-3 px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg shadow hover:bg-indigo-700 transition"
+  >
+    View Transcript
+  </a>
+)}
+
     </div>
   );
 };
