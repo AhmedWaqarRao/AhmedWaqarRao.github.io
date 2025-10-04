@@ -12,6 +12,20 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Efficient Real-Time Dynamic Pruning Techniques for Optimizing Target Detection Models in UAVs",
+    period: "Jul 2025",
+    institution: "GitHub Project",
+    description: "Proposed efficient pruning strategies for real-time UAV object detection, optimizing accuracy and latency trade-offs for embedded systems.",
+    github: "https://github.com/AhmedWaqarRao/Efficient-Real-Time-Dynamic-Pruning-Techniques-for-Optimizing-Target-Detection-Models-in-UAVs",
+  },
+  {
+    title: "Adaptive Precision Spraying Tasks on Edge Device Using Real-Time Crop Segmentation",
+    period: "Jul 2025",
+    institution: "GitHub Project",
+    description: "Implemented precision agriculture spraying using real-time crop segmentation models optimized for edge devices.",
+    github: "https://github.com/AhmedWaqarRao/Adaptive-Precision-Spraying-Tasks-on-Edge-Device-Using-Real-Time-Crop-Segmentation",
+  },
+  {
     title:
       "Impact of Colormap Selection on Deep Learning Predictions using Wavelet Scalograms for Flow Regime Identification",
 
@@ -32,26 +46,9 @@ const projects: Project[] = [
       "This research introduces a time-aware deep reinforcement learning framework designed to enhance dynamic multi-agent perception, enabling improved decision-making and coordination among agents in complex environments.",
     
   },
-  {
-    title:
-      "Impact of Colormap Selection on Deep Learning Predictions using Wavelet Scalograms for Flow Regime Identification",
-    description:
-      "This research investigates the effect of colormap selection on deep learning model predictions, specifically using wavelet scalograms for flow regime identification.",
-  },
-  {
-    title: "Efficient Real-Time Dynamic Pruning Techniques for Optimizing Target Detection Models in UAVs",
-    period: "Jul 2025",
-    institution: "GitHub Project",
-    description: "Proposed efficient pruning strategies for real-time UAV object detection, optimizing accuracy and latency trade-offs for embedded systems.",
-    github: "https://github.com/AhmedWaqarRao/Efficient-Real-Time-Dynamic-Pruning-Techniques-for-Optimizing-Target-Detection-Models-in-UAVs",
-  },
-  {
-    title: "Adaptive Precision Spraying Tasks on Edge Device Using Real-Time Crop Segmentation",
-    period: "Jul 2025",
-    institution: "GitHub Project",
-    description: "Implemented precision agriculture spraying using real-time crop segmentation models optimized for edge devices.",
-    github: "https://github.com/AhmedWaqarRao/Adaptive-Precision-Spraying-Tasks-on-Edge-Device-Using-Real-Time-Crop-Segmentation",
-  },
+  
+  
+  
   {
     title: "Real-Time License Plate Detection and Vehicle Speed Estimation Using Deep Learning",
     period: "Jul 2025",
