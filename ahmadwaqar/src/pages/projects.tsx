@@ -35,12 +35,6 @@ const projects: Project[] = [
   },
   {
     title:
-      "Passive-Two-Phase-Flow-Regime-Identification-based-on-Wavelet-Transform-Scalogram-and-Deep-Learning",
-    description:
-      "This research focuses on two-phase flow regime identification using wavelet transform scalograms combined with deep learning architectures for robust, accurate classification of complex flow patterns.",
-  },
-  {
-    title:
       "Time Aware Deep Reinforcement Learning Framework for Dynamics Multi Agent Perception",
     description:
       "This research introduces a time-aware deep reinforcement learning framework designed to enhance dynamic multi-agent perception, enabling improved decision-making and coordination among agents in complex environments.",
