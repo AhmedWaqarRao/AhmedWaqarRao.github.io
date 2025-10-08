@@ -1,6 +1,6 @@
 // src/pages/Certifications.tsx
 import { FC } from "react";
-import { ExternalLink, Download, X } from "lucide-react";
+import {  Download, X } from "lucide-react";
 import { useState } from "react";
 
 interface Certification {
@@ -295,13 +295,13 @@ const certifications: Certification[] = [
 
 const Certifications: FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
+  // const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
 
-  const handleShowCredential = (url?: string) => {
-    if (url) {
-      setSelectedPdf(url);
-    }
-  };
+  // const handleShowCredential = (url?: string) => {
+  //   if (url) {
+  //     setSelectedPdf(url);
+  //   }
+  // };
 
   const handleShowImage = (url?: string) => {
     if (url) {

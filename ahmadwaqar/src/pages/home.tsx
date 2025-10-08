@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Linkedin, Github, Mail, Globe, MessageCircle, Code, Wrench, BookOpen, Cpu, Users, Briefcase, Languages } from "lucide-react";
+import { Linkedin, Github, Mail, Globe, MessageCircle } from "lucide-react";
 
 const Home: FC = () => {
   return (
