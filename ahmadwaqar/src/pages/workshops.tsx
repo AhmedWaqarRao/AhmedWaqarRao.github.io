@@ -72,6 +72,17 @@ const conferences: Event[] = [
       "The Second Belt and Road Academic Forum on Engineering and Technology served as a platform to deepen international scientific collaboration among participating nations. Building on the inaugural event, this iteration specifically focused on harnessing interdisciplinary research and technological innovations to address transnational challenges. The forum facilitated strategic partnerships between academic institutions and industry leaders to accelerate sustainable socioeconomic development across the Belt and Road network.",
   },
   {
+    title:
+      "Third Belt and Road Academic Forum of Engineering Science and Technology & First Shaanxi Academic Forum for International Students – Second Prize Winner",
+    issuer: "Northwestern Polytechnical University",
+    issueDate: "November 2025",
+    skills: ["Oral Presentation", "Event Management", "Academic Research"],
+    imageUrl: "/thirdBeltAndRoad.jpg",
+    location: "Xi’an, China",
+    details:
+      "Awarded Second Prize in the Oral Presentation category at the Third Belt and Road Academic Forum of Engineering Science and Technology and the First Shaanxi Academic Forum for International Students, held at NPU. Contributed not only as a presenter but also as part of the event's organizing and management team. Engaged with esteemed professors from the School of Computer Science and Software, gaining valuable insights on research and PhD pathways. Marked the third consecutive year of active participation in this international academic platform.",
+  },
+  {
     title: "2024 China (Xi’an) International Low-Altitude Economic Development Conference",
     issuer: "PCCAI",
     issueDate: "2024",
