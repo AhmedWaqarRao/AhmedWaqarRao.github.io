@@ -295,13 +295,7 @@ const certifications: Certification[] = [
 
 const Certifications: FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  // const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
-
-  // const handleShowCredential = (url?: string) => {
-  //   if (url) {
-  //     setSelectedPdf(url);
-  //   }
-  // };
+ 
 
   const handleShowImage = (url?: string) => {
     if (url) {
