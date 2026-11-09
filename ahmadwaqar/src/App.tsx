@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/sideBar";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
@@ -10,13 +11,33 @@ import Publications from "./pages/publications";
 import Education from "./pages/education";
 import Skills from "./pages/skills";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
     <Router>
-      <div className="flex">
-        <Sidebar />
+      <ScrollToTop />
+      <Sidebar />
 
-        <main className="flex-1 min-h-screen bg-gray-100 p-6 overflow-y-auto ml-0">
+      <main className="min-h-screen lg:ml-72 pt-20 lg:pt-8 px-4 sm:px-6 lg:px-10 pb-12">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedRoutes />
+        </div>
+      </main>
+    </Router>
+  );
+}
+
+function AnimatedRoutes() {
+  const { pathname } = useLocation();
+  return (
+    <div key={pathname} className="page-enter">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
@@ -25,12 +46,10 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/recommendations" element={<Recommendations />} />
             <Route path="/publications" element={<Publications />} />
-            <Route path="/education" element={<Education/>} />
-            <Route path="skills" element={<Skills/>} />
+            <Route path="/education" element={<Education />} />
+            <Route path="skills" element={<Skills />} />
           </Routes>
-        </main>
-      </div>
-    </Router>
+    </div>
   );
 }
 

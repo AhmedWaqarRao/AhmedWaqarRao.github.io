@@ -155,7 +155,7 @@ const projects: Project[] = [
     description:
       "Trained YOLOv6 object detection framework on a custom dataset. Focused on dataset preparation, model fine-tuning, and achieving higher detection accuracy for real-world use cases.",
     github:
-      "https://github.com/AhmedWaqarRao/Training_YOLOv6_on-Custom_Data-",
+      "https://github.com/AhmedWaqarRao/Training_YOLOv6_on_Custom_Data-",
   },
   {
     title: "Enigma Machine Project",
@@ -294,7 +294,7 @@ const projects: Project[] = [
     institution: "Northwestern Polytechnical University",
     description:
       "Developed a complete BlackJack card game implementation in Python with full game logic.",
-    github: "https://github.com/AhmedWaqarRao/Complete-BlackJack-Card-Game-in-Python",
+    github: "https://github.com/AhmedWaqarRao/Complete-BlackJack-Card-Game-in-Python.",
   },
   {
     title: "CNN on Built-in Datasets",
@@ -335,7 +335,7 @@ const projects: Project[] = [
     institution: "Northwestern Polytechnical University",
     description:
       "Applied Principal Component Analysis to reduce dimensionality of breast cancer dataset to 2 principal components.",
-    github: "https://github.com/AhmedWaqarRao/ML_Algorithms_7-PCA-Project",
+    github: "https://github.com/AhmedWaqarRao/ML_Algorithms_7-PCA-Project-",
   },
   {
     title: "Enigma Machine For Cypher (Electrical and Software Working)",

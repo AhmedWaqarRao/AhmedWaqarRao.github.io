@@ -111,7 +111,7 @@ const certifications: Certification[] = [
     credentialId: "VBZKNVVTMGQL",
     skills: ["TensorFlow", "PyTorch", "Data Science", "Artificial Intelligence (AI)"],
     imageUrl: "/certifications/deep-learning-specialization.png",
-    credentialUrl: "/certifications/deep-learning-specialization.pdf",
+    credentialUrl: "/certifications/Deep Learning Specialization.pdf",
   },
   {
     title: "Deep Learning with PyTorch: Generative Adversarial Network",
