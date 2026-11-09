@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Menu,
   X,
@@ -13,10 +13,13 @@ import {
   Mic,
   Award,
   MessageSquareQuote,
+  Handshake,
+  Heart,
 } from "lucide-react";
 
-const links = [
+const links: { name: string; path: string; hash?: string; icon: typeof Home }[] = [
   { name: "Home", path: "/", icon: Home },
+  { name: "Services", path: "/", hash: "#services", icon: Handshake },
   { name: "Education", path: "/education", icon: GraduationCap },
   { name: "Skills", path: "/skills", icon: Wrench },
   { name: "Experience", path: "/experience", icon: Briefcase },
@@ -25,10 +28,15 @@ const links = [
   { name: "Conferences/Workshops", path: "/workshops", icon: Mic },
   { name: "Certifications", path: "/certifications", icon: Award },
   { name: "Recommendations", path: "/recommendations", icon: MessageSquareQuote },
+  { name: "Interests", path: "/interests", icon: Heart },
 ];
 
 const Sidebar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname, hash } = useLocation();
+
+  const isActive = (path: string, linkHash?: string) =>
+    linkHash ? pathname === path && hash === linkHash : path === "/" ? pathname === "/" && hash !== "#services" : pathname === path;
 
   // Lock page scroll while the mobile drawer is open
   useEffect(() => {
@@ -45,6 +53,13 @@ const Sidebar: FC = () => {
         <span className="font-semibold tracking-tight" style={{ fontFamily: "Space Grotesk" }}>
           Ahmed Waqar Rao
         </span>
+        <div className="flex items-center gap-1">
+        <Link
+          to={{ pathname: "/", hash: "#services" }}
+          className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 px-3 py-1.5 text-xs font-semibold text-white"
+        >
+          <Handshake size={14} /> Services
+        </Link>
         <button
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
@@ -53,6 +68,7 @@ const Sidebar: FC = () => {
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
+        </div>
       </header>
 
       {/* Sidebar: permanent on desktop, drawer on mobile */}
@@ -76,23 +92,24 @@ const Sidebar: FC = () => {
           </div>
 
           <nav className="flex flex-col gap-1">
-            {links.map(({ name, path, icon: Icon }) => (
-              <NavLink
-                key={path}
-                to={path}
-                end={path === "/"}
-                onClick={() => setIsOpen(false)}
-                className={({ isActive }) =>
-                  `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition ${
-                    isActive
+            {links.map(({ name, path, hash: linkHash, icon: Icon }) => {
+              const active = isActive(path, linkHash);
+              return (
+                <Link
+                  key={name}
+                  to={{ pathname: path, hash: linkHash }}
+                  onClick={() => setIsOpen(false)}
+                  aria-current={active ? "page" : undefined}
+                  className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition ${
+                    active
                       ? "bg-gradient-to-r from-indigo-500/90 to-cyan-500/70 text-white shadow-lg shadow-indigo-900/40"
                       : "text-slate-300 hover:bg-white/5 hover:text-white"
-                  }`
-                }
-              >
-                <Icon size={18} /> {name}
-              </NavLink>
-            ))}
+                  }`}
+                >
+                  <Icon size={18} /> {name}
+                </Link>
+              );
+            })}
           </nav>
         </div>
 

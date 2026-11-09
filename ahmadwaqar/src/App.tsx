@@ -10,12 +10,20 @@ import Recommendations from "./pages/recommendations";
 import Publications from "./pages/publications";
 import Education from "./pages/education";
 import Skills from "./pages/skills";
+import Interests from "./pages/interests";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
+    if (hash) {
+      // wait a tick so the target section exists after a route change
+      const id = window.setTimeout(() => {
+        document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 80);
+      return () => window.clearTimeout(id);
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 }
 
@@ -47,7 +55,8 @@ function AnimatedRoutes() {
             <Route path="/recommendations" element={<Recommendations />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/education" element={<Education />} />
-            <Route path="skills" element={<Skills />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/interests" element={<Interests />} />
           </Routes>
     </div>
   );

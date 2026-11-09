@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState } from "react";
+import { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Linkedin,
@@ -11,77 +11,64 @@ import {
   GraduationCap,
   FileDown,
   ArrowRight,
+  ArrowUpRight,
   Sparkles,
-  Languages,
   Zap,
-  Award,
-  Lightbulb,
-  Target,
-  Users,
   MessageSquare,
   BookOpenCheck,
   Copy,
   Check,
+  Eye,
+  Cpu,
+  Cog,
+  ClipboardCheck,
+  Ship,
+  Handshake,
+  BookOpen,
 } from "lucide-react";
+import Section from "../components/Section";
+import { publications } from "./publications";
+import { projects } from "./projects";
+import { certifications } from "./certifications";
+import { workshops, conferences } from "./workshops";
 
-const Section: FC<{ title: string; icon: ReactNode; children: ReactNode }> = ({
-  title,
-  icon,
-  children,
-}) => (
-  <section className="card p-6 sm:p-8 reveal">
-    <h2 className="flex items-center gap-3 text-2xl font-bold text-slate-900 mb-6">
-      <span className="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 text-white shadow-md shadow-indigo-500/30">
-        {icon}
-      </span>
-      {title}
-    </h2>
-    {children}
-  </section>
-);
+const stats = [
+  { value: publications.length, label: "Publications" },
+  { value: new Set(projects.map((p) => p.title)).size, label: "Projects" },
+  { value: certifications.length, label: "Certifications" },
+  { value: workshops.length + conferences.length, label: "Talks & events" },
+];
 
-const refAccent: Record<string, { bar: string; name: string }> = {
-  blue: { bar: "border-blue-500", name: "text-blue-700" },
-  green: { bar: "border-emerald-500", name: "text-emerald-700" },
-  indigo: { bar: "border-indigo-500", name: "text-indigo-700" },
-};
-
-const references = [
+const services = [
   {
-    name: "Yu Zhang",
-    title: "Professor",
-    affiliation:
-      "Department of AI Computing System, School of Computer Science, Northwestern Polytechnical University",
-    address: "1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China",
-    email: "zhangyu@nwpu.edu.cn",
-    phone: "(+86) 13891997511",
-    website: "https://yuzhang-nwpu.github.io/yuzhang/",
-    relation: "🎓 Academic Mentor",
-    color: "blue",
+    icon: Eye,
+    title: "Computer Vision & Deep Learning",
+    desc: "Image classification, object detection, segmentation and tracking, plus data annotation to train them.",
   },
   {
-    name: "Umar Shahbaz Khan",
-    title: "Tenured Associate Professor / Project Director NCRA",
-    affiliation:
-      "Department of Mechatronics Engineering, College of Electrical & Mechanical Engineering, NUST",
-    address: "Peshawar Road, Rawalpindi 46000, Pakistan",
-    email: "u.shahbaz@ceme.nust.edu.pk",
-    phone: "(+92) 3005533775",
-    website: undefined as string | undefined,
-    relation: "🎓 Former Teacher & Research Supervisor",
-    color: "green",
+    icon: Cpu,
+    title: "Edge AI & UAV Deployment",
+    desc: "Lightweight, optimised models that run in real time on edge devices such as the NVIDIA Jetson.",
   },
   {
-    name: "Hamid Jabbar",
-    title: "Head of Department & Associate Professor",
-    affiliation:
-      "Mechatronics Engineering Department, College of Electrical & Mechanical Engineering, NUST",
-    address: "Peshawar Road, Rawalpindi 46000, Pakistan",
-    email: "hamid.jabbar@ceme.nust.edu.pk",
-    phone: "(+92) 3005274026",
-    website: undefined as string | undefined,
-    relation: "🎓 Department Head & Mentor",
-    color: "indigo",
+    icon: Cog,
+    title: "Engineering & IT Projects",
+    desc: "Tailored, end-to-end engineering and IT solutions delivered through 3Dim Engineering Solutions.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Technical Consultation",
+    desc: "Technical consultation, solution design and clear documentation for your project.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Training, Talks & Mentoring",
+    desc: "Workshops, technical and English talks, and mentoring in AI, robotics and research.",
+  },
+  {
+    icon: Ship,
+    title: "International Trade & Sourcing",
+    desc: "Factory sourcing, import/export, DDP and customs support between China and Pakistan.",
   },
 ];
 
@@ -91,62 +78,6 @@ const expertise = [
   "Software: Google Colab, Jupyter Notebook, Spyder, VS Code and many more.",
   "Frameworks & Libraries: PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face Transformers, OpenCV, Ultralytics.",
   "Programming Languages: C++, Python, Assembly Language, Matlab",
-];
-
-const certs = [
-  "Python Programming",
-  "Deep Learning",
-  "Computer Vision",
-  "Data Analytics",
-  "Data Science",
-  "Efficient Computing",
-  "GANS",
-];
-
-const interests = [
-  {
-    title: "Technology Management",
-    desc: "Exploring how to align business strategies with emerging technologies.",
-  },
-  {
-    title: "News Stories",
-    desc: "Following the latest developments in AI, robotics, and innovation.",
-  },
-  {
-    title: "Engineering",
-    desc: "Building solutions that combine creativity with problem-solving.",
-  },
-  {
-    title: "Cyber Security",
-    desc: "Interested in securing AI-driven systems and real-time UAV deployments.",
-  },
-];
-
-const hobbies = [
-  {
-    title: "🔥 Entrepreneurial Mindset",
-    desc: "Passionate about leading innovative IT projects (150+ completed) that drive business growth and strategic impact.",
-  },
-  {
-    title: "✅ Project Management",
-    desc: "Experienced in managing cross-platform projects, ensuring quality, innovation, and successful delivery.",
-  },
-  {
-    title: "🌐 Cross-Cultural Exchange",
-    desc: "Engaged in international collaboration and global networking, actively contributing to PCCAI initiatives.",
-  },
-  {
-    title: "🤖 Robotics & AI",
-    desc: "Exploring cutting-edge technologies in robotics, deep learning, and AI-powered solutions for real-world problems.",
-  },
-  {
-    title: "🎤 Tech & English Talks",
-    desc: "Enjoy delivering engaging talks on technology and English communication, inspiring others to learn and grow.",
-  },
-  {
-    title: "📝 Content Creation",
-    desc: "Active in creating content on AI, robotics, and innovation to share knowledge and inspire the global community.",
-  },
 ];
 
 const contactItem =
@@ -265,6 +196,17 @@ const Home: FC = () => {
                 <FileDown size={16} /> CV
               </a>
             </div>
+
+            <dl className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center md:text-left">
+              {stats.map((st) => (
+                <div key={st.label} className="flex flex-col rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  <dt className="order-2 text-xs text-slate-300">{st.label}</dt>
+                  <dd className="text-2xl font-bold text-white" style={{ fontFamily: "Space Grotesk" }}>
+                    {st.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           <div className="md:w-1/3 flex justify-center shrink-0">
@@ -280,7 +222,7 @@ const Home: FC = () => {
       </section>
 
       {/* About Section */}
-      <section className="card p-6 sm:p-8 reveal">
+      <section id="about" className="card p-6 sm:p-8 reveal scroll-mt-24">
         <h2 className="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
         <div className="space-y-4 text-slate-600 leading-relaxed">
           <p>
@@ -328,127 +270,60 @@ const Home: FC = () => {
         </ul>
       </Section>
 
-      {/* Language Proficiency Section */}
-      <Section title="Language Proficiency" icon={<Languages size={20} />}>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 card-hover transition">
-            <h3 className="font-semibold text-lg text-slate-900">🇬🇧 English</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Fluent – Academic, Professional, and Public Speaking
-            </p>
-          </div>
-          <div className="rounded-2xl border-2 border-amber-300 bg-amber-50 p-5 card-hover transition">
-            <h3 className="font-semibold text-lg flex items-center gap-2 text-red-600">
-              🇨🇳 Chinese{" "}
-              <span className="text-xs bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full font-semibold">
-                HSK-3
+      {/* Services Section */}
+      <section id="services" className="scroll-mt-24 reveal">
+        <div className="mb-6 text-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-indigo-50 border border-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">
+            <Handshake size={14} /> Work with me
+          </span>
+          <h2 className="mt-3 text-3xl font-bold text-slate-900">Services</h2>
+          <p className="mt-2 max-w-2xl mx-auto text-slate-600">
+            From research-grade AI to practical engineering delivery. Tell me about your project.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {services.map(({ icon: Icon, title, desc }) => (
+            <div key={title} className="card card-hover p-6">
+              <span className="grid place-items-center w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 text-white shadow-md shadow-indigo-500/30">
+                <Icon size={22} />
               </span>
-            </h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Proficient in daily communication and academic interaction. Actively improving towards advanced HSK levels.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 card-hover transition">
-            <h3 className="font-semibold text-lg text-slate-900">🇵🇰 Urdu</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Native – Strong cultural and professional communication
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      {/* Certifications Section */}
-      <Section title="Certifications" icon={<Award size={20} />}>
-        <div className="flex flex-wrap gap-3">
-          {certs.map((cert) => (
-            <span
-              key={cert}
-              className="rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 px-4 py-1.5 text-sm font-medium hover:bg-indigo-100 transition"
-            >
-              {cert}
-            </span>
-          ))}
-        </div>
-      </Section>
-
-      {/* Interests Section */}
-      <Section title="Interests" icon={<Lightbulb size={20} />}>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {interests.map((interest) => (
-            <div
-              key={interest.title}
-              className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 card-hover transition"
-            >
-              <h3 className="font-semibold text-lg text-slate-900">{interest.title}</h3>
-              <p className="text-sm mt-2 text-slate-600">{interest.desc}</p>
+              <h3 className="mt-4 text-lg font-semibold text-slate-900">{title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{desc}</p>
             </div>
           ))}
         </div>
-      </Section>
+        <div className="mt-6 text-center">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 hover:brightness-110 transition"
+          >
+            Discuss a project <ArrowRight size={16} />
+          </a>
+        </div>
+      </section>
 
-      {/* Hobbies Section */}
-      <Section title="Hobbies & Interests" icon={<Target size={20} />}>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {hobbies.map((h) => (
-            <div
-              key={h.title}
-              className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 card-hover transition"
+      {/* Featured Publications */}
+      <Section title="Featured Publications" icon={<BookOpen size={20} />}>
+        <div className="grid md:grid-cols-3 gap-5">
+          {publications.slice(0, 3).map((pub) => (
+            <Link
+              key={pub.id}
+              to="/publications"
+              className="group rounded-2xl border border-slate-200 bg-slate-50/70 p-5 card-hover transition"
             >
-              <h3 className="font-semibold text-lg text-slate-900">{h.title}</h3>
-              <p className="text-sm mt-2 text-slate-600">{h.desc}</p>
-            </div>
+              <h3 className="font-semibold text-slate-900 group-hover:text-indigo-700 transition">
+                {pub.title}
+              </h3>
+              <p className="mt-2 text-sm text-slate-600 line-clamp-3">{pub.description}</p>
+            </Link>
           ))}
         </div>
-      </Section>
-
-      {/* References Section */}
-      <Section title="References" icon={<Users size={20} />}>
-        <ul className="grid lg:grid-cols-3 gap-5">
-          {references.map((ref) => {
-            const accent = refAccent[ref.color];
-            return (
-              <li
-                key={ref.name}
-                className={`border-l-4 ${accent.bar} rounded-xl bg-slate-50/70 p-5 card-hover transition`}
-              >
-                <h3 className={`text-lg font-semibold ${accent.name}`}>{ref.name}</h3>
-                <p className="text-sm text-slate-600 mt-1">{ref.title}</p>
-                <p className="text-sm text-slate-600">{ref.affiliation}</p>
-                <p className="text-sm text-slate-600">{ref.address}</p>
-
-                <div className="mt-3 space-y-1 text-sm break-words">
-                  <p>
-                    <span className="font-medium text-slate-800">📧 Email:</span>{" "}
-                    <a href={`mailto:${ref.email}`} className={contactLink}>
-                      {ref.email}
-                    </a>
-                  </p>
-                  <p>
-                    <span className="font-medium text-slate-800">📞 Phone:</span>{" "}
-                    <a href={`tel:${ref.phone.replace(/[^+\d]/g, "")}`} className={contactLink}>
-                      {ref.phone}
-                    </a>
-                  </p>
-                  {ref.website && (
-                    <p>
-                      <span className="font-medium text-slate-800">🌐 Website:</span>{" "}
-                      <a
-                        href={ref.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={contactLink}
-                      >
-                        {ref.website}
-                      </a>
-                    </p>
-                  )}
-                </div>
-
-                <p className="mt-3 text-sm font-medium text-slate-800">{ref.relation}</p>
-              </li>
-            );
-          })}
-        </ul>
+        <Link
+          to="/publications"
+          className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-700 hover:underline"
+        >
+          View all publications <ArrowUpRight size={16} />
+        </Link>
       </Section>
 
       {/* Contact Section */}

@@ -13,7 +13,7 @@ interface Event {
   location?: string;
 }
 
-const workshops: Event[] = [
+export const workshops: Event[] = [
   {
     title: "Pakistan-China Commerce and Trade Alliance",
     issuer: "PCCAI",
@@ -52,7 +52,7 @@ const workshops: Event[] = [
   },
 ];
 
-const conferences: Event[] = [
+export const conferences: Event[] = [
   {
     title: "First Belt and Road Academic Forum of Engineering and Technology",
     issuer: "Northwestern Polytechnical University",

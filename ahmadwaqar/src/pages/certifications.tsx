@@ -15,7 +15,7 @@ interface Certification {
   credentialUrl?: string;
 }
 
-const certifications: Certification[] = [
+export const certifications: Certification[] = [
   {
     title: "Advanced Learning Algorithms",
     issuer: "Coursera",

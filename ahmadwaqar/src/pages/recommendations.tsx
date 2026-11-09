@@ -1,5 +1,6 @@
 import { FC } from "react";
 import PageHeader from "../components/PageHeader";
+import References from "../components/References";
 import { MessageSquareQuote } from "lucide-react";
 
 interface Recommendation {
@@ -120,6 +121,10 @@ const Recommendations: FC = () => {
             <p className="text-gray-700 mt-4 leading-relaxed">{rec.text}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-12">
+        <References />
       </div>
     </div>
   );

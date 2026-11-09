@@ -10,7 +10,7 @@ interface Publication {
   tags: string[];
 }
 
-const publications: Publication[] = [
+export const publications: Publication[] = [
   {
     id: 1,
     title:

@@ -1,12 +1,12 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
+import LanguageProficiency from "../components/LanguageProficiency";
 import {
   Code,
   Wrench,
   BookOpen,
   Briefcase,
   Users,
-  Languages,
   Layers,
 } from "lucide-react";
 
@@ -96,14 +96,6 @@ export default function Skills() {
             color="orange"
           />
 
-          {/* Language Skills */}
-          <SkillCard
-            title="Language Skills"
-            icon={<Languages size={22} className="text-purple-600" />}
-            items={["English (Fluent)", "Chinese (HSK-3)", "Urdu (Native)"]}
-            color="purple"
-          />
-
           {/* Other Software */}
           <SkillCard
             title="Other Software"
@@ -119,6 +111,10 @@ export default function Skills() {
             ]}
             color="pink"
           />
+        </div>
+
+        <div className="mt-10">
+          <LanguageProficiency />
         </div>
       </div>
     </section>

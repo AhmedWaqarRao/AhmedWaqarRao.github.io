@@ -12,7 +12,7 @@ interface Project {
   github?: string;
 }
 
-const projects: Project[] = [
+export const projects: Project[] = [
   {
     title: "Efficient Real-Time Dynamic Pruning Techniques for Optimizing Target Detection Models in UAVs",
     period: "Jul 2025",
