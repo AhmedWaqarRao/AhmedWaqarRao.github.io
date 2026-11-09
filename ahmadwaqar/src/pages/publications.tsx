@@ -14,7 +14,7 @@ export const publications: Publication[] = [
   {
     id: 1,
     title:
-      "🚀 Adaptive-Precision-Spraying-Tasks-on-Edge-Device-Using-Real-Time-Crop-Segmentation",
+      "Adaptive Precision Spraying Tasks on Edge Device Using Real-Time Crop Segmentation",
     subtitle:
       '"Adaptive Edge AI Deployment for Real-Time Crop Segmentation Using Scenario-Aware Dynamic Model Pruning"',
     description:
@@ -30,7 +30,7 @@ export const publications: Publication[] = [
   {
     id: 2,
     title:
-      "Passive-Two-Phase-Flow-Regime-Identification-based-on-Wavelet-Transform-Scalogram-and-Deep-Learning",
+      "Passive Two-Phase Flow Regime Identification based on Wavelet Transform Scalogram and Deep Learning",
     subtitle: "",
     description:
       "This research focuses on two-phase flow regime identification using wavelet transform scalograms combined with deep learning architectures for robust, accurate classification of complex flow patterns.",

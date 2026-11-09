@@ -369,7 +369,7 @@ const Certifications: FC = () => {
                     onClick={() => handleShowCredential(certification.credentialUrl)}
                     className="flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm"
                   >
-                    <ExternalLink size={16} className="mr-1" /> Show credential
+                    <ExternalLink size={16} className="mr-1" /> Show Credential
                   </button>
                 )} */}
               </div>

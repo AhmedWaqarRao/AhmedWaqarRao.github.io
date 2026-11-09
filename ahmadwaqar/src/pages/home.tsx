@@ -48,7 +48,7 @@ const services = [
   {
     icon: Cpu,
     title: "Edge AI & UAV Deployment",
-    desc: "Lightweight, optimised models that run in real time on edge devices such as the NVIDIA Jetson.",
+    desc: "Lightweight, optimized models that run in real time on edge devices such as the NVIDIA Jetson.",
   },
   {
     icon: Cog,
@@ -58,7 +58,7 @@ const services = [
   {
     icon: ClipboardCheck,
     title: "Technical Consultation",
-    desc: "Technical consultation, solution design and clear documentation for your project.",
+    desc: "Solution design, technical advice and clear documentation for your project.",
   },
   {
     icon: GraduationCap,
@@ -68,16 +68,16 @@ const services = [
   {
     icon: Ship,
     title: "International Trade & Sourcing",
-    desc: "Factory sourcing, import/export, DDP and customs support between China and Pakistan.",
+    desc: "Factory sourcing, import/export, DDP and customs support.",
   },
 ];
 
 const expertise = [
   "Computer Vision: Image Classification, Object Detection, Machine Learning algorithms, Deep Learning algorithms, LVMs, Neural Networks, Image Processing Techniques, and Data Annotation.",
-  "Artificial Intelligence: Machine Learning, Deep Learning, LLMs, Prompt Engineering and many more.",
-  "Software: Google Colab, Jupyter Notebook, Spyder, VS Code and many more.",
+  "Artificial Intelligence: Machine Learning, Deep Learning, LLMs, Prompt Engineering, and more.",
+  "Software: Google Colab, Jupyter Notebook, Spyder, VS Code, and more.",
   "Frameworks & Libraries: PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face Transformers, OpenCV, Ultralytics.",
-  "Programming Languages: C++, Python, Assembly Language, Matlab",
+  "Programming Languages: C++, Python, Assembly Language, MATLAB",
 ];
 
 const contactItem =
@@ -159,13 +159,13 @@ const Home: FC = () => {
           }}
         />
 
-        <div className="relative flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-          <div className="md:w-2/3 text-center md:text-left">
+        <div className="relative flex flex-col-reverse xl:flex-row items-center justify-between gap-10">
+          <div className="xl:w-2/3 text-center xl:text-left">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-indigo-200">
               <Sparkles size={14} /> Edge AI · UAV · Computer Vision
             </span>
             <h1 className="hero-title mt-4 text-4xl sm:text-5xl font-bold leading-tight">
-              Ahmed Waqar <span className="text-gradient">Rao</span> 👋
+              Ahmed Waqar <span className="text-gradient">Rao</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-300">
               Passionate about <span className="font-semibold text-white">Deep Learning</span>,{" "}
@@ -175,7 +175,7 @@ const Home: FC = () => {
               <span className="italic text-cyan-200">Unmanned Aerial Vehicles (UAVs) 🚁</span>.
             </p>
 
-            <div className="mt-7 flex flex-wrap justify-center md:justify-start gap-3">
+            <div className="mt-7 flex flex-wrap justify-center xl:justify-start gap-3">
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 px-5 py-2.5 text-sm font-semibold shadow-lg shadow-indigo-900/40 hover:brightness-110 transition"
@@ -197,11 +197,11 @@ const Home: FC = () => {
               </a>
             </div>
 
-            <dl className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center md:text-left">
+            <dl className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center xl:text-left">
               {stats.map((st) => (
                 <div key={st.label} className="flex flex-col rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                   <dt className="order-2 text-xs text-slate-300">{st.label}</dt>
-                  <dd className="text-2xl font-bold text-white" style={{ fontFamily: "Space Grotesk" }}>
+                  <dd className="text-2xl font-bold tabular-nums text-white" style={{ fontFamily: "Space Grotesk" }}>
                     {st.value}
                   </dd>
                 </div>
@@ -209,7 +209,7 @@ const Home: FC = () => {
             </dl>
           </div>
 
-          <div className="md:w-1/3 flex justify-center shrink-0">
+          <div className="xl:w-1/3 flex justify-center shrink-0">
             <div className="shrink-0 rounded-full p-1.5 bg-gradient-to-br from-indigo-400 via-cyan-300 to-indigo-500 shadow-2xl shadow-indigo-500/30">
               <img
                 src={`${process.env.PUBLIC_URL}/ahmadwaqar.jpg`}
@@ -223,8 +223,9 @@ const Home: FC = () => {
 
       {/* About Section */}
       <section id="about" className="card p-6 sm:p-8 scroll-mt-24">
-        <h2 className="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
-        <div className="space-y-4 text-slate-600 leading-relaxed">
+        <h2 className="text-2xl font-bold text-slate-900 mb-5">About Me</h2>
+        <div className="grid xl:grid-cols-[minmax(0,1fr)_300px] gap-8 items-start">
+        <div className="space-y-5 text-[1.0625rem] leading-8 text-slate-600">
           <p>
             I am a passionate researcher and engineer focused on applying my expertise in{" "}
             <span className="font-semibold text-slate-900">
@@ -250,6 +251,25 @@ const Home: FC = () => {
             integration in UAV systems. My goal is to contribute meaningfully to the field by delivering scalable, robust, and efficient
             AI solutions that bridge academic research with tangible, real-world impact.
           </p>
+        </div>
+
+          <aside className="rounded-2xl border border-slate-200 bg-gradient-to-b from-indigo-50/70 to-cyan-50/60 p-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-indigo-700">At a glance</h3>
+            <dl className="mt-4 space-y-4 text-sm">
+              {[
+                ["Based in", "Xi’an, Shaanxi, China"],
+                ["Affiliation", "Northwestern Polytechnical University"],
+                ["Focus", "Edge AI, UAV target detection, segmentation"],
+                ["Tools", "PyTorch, TensorFlow, YOLO, OpenCV"],
+                ["Languages", "English, Chinese (HSK-3), Urdu"],
+              ].map(([k, v]) => (
+                <div key={k}>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">{k}</dt>
+                  <dd className="mt-0.5 font-medium text-slate-800">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </aside>
         </div>
       </section>
 
@@ -388,7 +408,7 @@ const Home: FC = () => {
               <p className="font-semibold text-slate-900">Address</p>
               <p>
                 School of Computer Science, Northwestern Polytechnical University, 1 Dongxiang
-                Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China
+                Road, Chang’an District, Xi’an, Shaanxi, 710129, P.R. China
               </p>
             </div>
           </div>

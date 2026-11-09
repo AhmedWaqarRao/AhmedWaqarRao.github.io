@@ -66,7 +66,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Passive-Two-Phase-Flow-Regime-Identification-based-on-Wavelet-Transform-Scalogram-and-Deep-Learning.",
   },
   {
-    title: "TensorRT Backend For ONNX",
+    title: "TensorRT Backend for ONNX",
     period: "Feb 2025",
     institution: "GitHub Project",
     description: "Implemented TensorRT backend optimizations for ONNX models to enable efficient deep learning inference.",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Complete-BlackJack-Card-Game-in-Python.",
   },
   {
-    title: "Only Train Once (OTO): Automatic One-Shot DNN Training And Compression Framework",
+    title: "Only Train Once (OTO): Automatic One-Shot DNN Training and Compression Framework",
     period: "Oct 2024",
     institution: "GitHub Project",
     description: "Introduced a one-shot deep neural network training and compression framework for resource-efficient AI models.",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Convolutional_Neural_Network_-CNN-_Project",
   },
   {
-    title: "Simulate A Banking System (OOP Project)",
+    title: "Simulate a Banking System (OOP Project)",
     period: "Aug 2024",
     institution: "GitHub Project",
     description: "Built an OOP-based banking system simulator with account management and transaction features.",
@@ -233,15 +233,15 @@ export const projects: Project[] = [
 
   {
     title: "Design and Development of Olive Grading Mechanism & Pitting Machine (Final Year Project)",
-    period: "Aug 2021 - Jun 2022",
+    period: "Aug 2021 – Jun 2022",
     institution: "National University of Sciences and Technology (NUST)",
     description:
-      "Developed a semi-automated machine for grading and pitting olives using Geneva and Slider Crank Mechanisms. Designed 3D CAD models and hardware to reduce Pakistan's dependence on imported olive oil.",
+      "Developed a semi-automated machine for grading and pitting olives using Geneva and Slider Crank Mechanisms. Designed 3D CAD models and hardware to reduce Pakistan’s dependence on imported olive oil.",
     github:
       "https://github.com/AhmedWaqarRao/Design-and-Development-of-Olive-Pitting-and-Grading-Machine",
   },
   {
-    title: "24V To 12V & 24V Step Down Transformer (Actuating System Project)",
+    title: "24V to 12V & 24V Step Down Transformer (Actuating System Project)",
     institution: "National University of Sciences and Technology (NUST)",
     description:
       "Designed and implemented a step-down transformer system for voltage conversion, working with electric machines and current-carrying coils.",
@@ -314,7 +314,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/Convolutional_Neural_Network_-CNN-_Project",
   },
   {
-    title: "Calendar of a Year In C++",
+    title: "Calendar of a Year in C++",
     institution: "National University of Sciences and Technology (NUST)",
     description: "Developed a calendar application for any given year using C++.",
   },
@@ -325,7 +325,7 @@ export const projects: Project[] = [
       "Designed a circuit with LEDs that illuminate to indicate incoming calls through electric circuit analysis.",
   },
   {
-    title: "Data/Image Labelling & Annotation Projects",
+    title: "Data/Image Labeling & Annotation Projects",
     institution: "3Dim Engineering Solutions",
     description:
       "Created bounding boxes, added text tags, and annotated images using V7 Darwin Software with 2D/3D bounding boxes and semantic segmentation.",
@@ -339,7 +339,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/ML_Algorithms_7-PCA-Project-",
   },
   {
-    title: "Enigma Machine For Cypher (Electrical and Software Working)",
+    title: "Enigma Machine for Cipher (Electrical and Software Workings)",
     institution: "National University of Sciences and Technology (NUST)",
     description:
       "Built an Enigma machine with electromechanical rotor mechanism that scrambles letters for encoding and decoding messages.",
@@ -361,7 +361,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_6_K-Means-Clustering_Project",
   },
   {
-    title: "Fruit Plucking Robot At National Engineering Robotics Competition",
+    title: "Fruit Plucking Robot at National Engineering Robotics Competition",
     institution: "National University of Sciences and Technology (NUST)",
     description:
       "Developed two robots (one autonomous, one wirelessly controlled) for fruit plucking with Arduino programming and electronic circuitry.",
@@ -400,7 +400,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/ML_Algorithms_5-SVM-Project",
   },
   {
-    title: "Predicting Flowers Class using SVM",
+    title: "Predicting Flower Class Using SVM",
     institution: "Northwestern Polytechnical University",
     description:
       "Applied SVM algorithm on iris dataset to classify flower types based on sepal and petal measurements.",
@@ -415,7 +415,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_4_Decision-Tree-and-Random-Forest-Project",
   },
   {
-    title: "Predicting Loan Return using Various Features",
+    title: "Predicting Loan Repayment Using Various Features",
     institution: "Northwestern Polytechnical University",
     description:
       "Applied Decision Tree and Random Forest classifiers to predict loan repayment using various customer features.",
@@ -423,7 +423,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_4_Decision-Tree-and-Random-Forest-Project",
   },
   {
-    title: "Predicting the Price using Fake Data",
+    title: "Predicting the Price Using Fake Data",
     institution: "Northwestern Polytechnical University",
     description:
       "Built a neural network with TensorFlow/Keras to predict prices based on features in a fake dataset.",
@@ -438,7 +438,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_6_K-Means-Clustering_Project",
   },
   {
-    title: "Simulate A Banking System Using OOP (Library Management System)",
+    title: "Simulate a Banking System Using OOP (Library Management System)",
     institution: "Northwestern Polytechnical University",
     description:
       "Developed a banking system simulation using Object-Oriented Programming principles in Python.",

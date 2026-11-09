@@ -17,8 +17,8 @@ interface EducationItem {
 const education: EducationItem[] = [
   {
   institution: "Northwestern Polytechnical University, China",
-  degree: "Master in Science (MS), Computer Sciences and Technology",
-  period: "Aug 2023 - Jul 2026",
+  degree: "Master of Science (MS) in Computer Science and Technology",
+  period: "Aug 2023 – Jul 2026",
   courses: [
     "Chinese Language I",
     "Chinese Language II",
@@ -40,7 +40,7 @@ const education: EducationItem[] = [
     institution:
       "National University of Sciences and Technology (NUST), Pakistan",
     degree:
-      "Bachelor of Engineering (BE), Mechatronics, Robotics, and Automation Engineering",
+      "Bachelor of Engineering (BE) in Mechatronics, Robotics, and Automation Engineering",
     period: "2018 - 2022",
     courses: [
       "Data Structures and Object Oriented Programming",

@@ -64,7 +64,7 @@ export const conferences: Event[] = [
       "The First Belt and Road Academic Forum of Engineering and Technology aimed to promote global cooperation in engineering and technology among the nations participating in the Belt and Road Initiative. It sought to address global issues by utilizing cooperative knowledge, cutting-edge research, and technology breakthroughs. The forum aimed to fortify collaborations between academia and business to promote economic expansion and sustainable development.",
   },
   {
-    title: "Second Belt & Road Academic Forum of Engineering Science and Technology",
+    title: "Second Belt and Road Academic Forum of Engineering Science and Technology",
     issuer: "Northwestern Polytechnical University",
     issueDate: "2024",
     skills: ["AI", "Large Language Models", "Deep Learning"],

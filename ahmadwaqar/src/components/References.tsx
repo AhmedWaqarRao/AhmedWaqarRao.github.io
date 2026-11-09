@@ -14,7 +14,7 @@ const references = [
     title: "Professor",
     affiliation:
       "Department of AI Computing System, School of Computer Science, Northwestern Polytechnical University",
-    address: "1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China",
+    address: "1 Dongxiang Road, Chang’an District, Xi’an, Shaanxi, 710129, P.R. China",
     email: "zhangyu@nwpu.edu.cn",
     phone: "(+86) 13891997511",
     website: "https://yuzhang-nwpu.github.io/yuzhang/",

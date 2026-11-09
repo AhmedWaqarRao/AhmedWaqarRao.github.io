@@ -25,7 +25,7 @@ const links: { name: string; path: string; hash?: string; icon: typeof Home }[] 
   { name: "Experience", path: "/experience", icon: Briefcase },
   { name: "Publications", path: "/publications", icon: BookOpen },
   { name: "Projects", path: "/projects", icon: FolderGit2 },
-  { name: "Conferences/Workshops", path: "/workshops", icon: Mic },
+  { name: "Workshops & Conferences", path: "/workshops", icon: Mic },
   { name: "Certifications", path: "/certifications", icon: Award },
   { name: "Recommendations", path: "/recommendations", icon: MessageSquareQuote },
   { name: "Interests", path: "/interests", icon: Heart },

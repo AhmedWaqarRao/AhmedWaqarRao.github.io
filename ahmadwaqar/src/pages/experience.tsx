@@ -21,7 +21,7 @@ const experiences: ExperienceItem[] = [
     role: "Graduate Research Assistant",
     company: "Northwestern Polytechnical University",
     type: "Contract",
-    location: "Xi'an, Shaanxi, China · On-site",
+    location: "Xi’an, Shaanxi, China · On-site",
     start: "Sep 2023",
     end: "Present",
     description:
@@ -40,7 +40,7 @@ const experiences: ExperienceItem[] = [
     role: "Co-Founder and CEO",
     company: "3Dim Engineering Solutions",
     type: "Self-employed",
-    location: "Xi'an, Shaanxi, China · On-site",
+    location: "Xi’an, Shaanxi, China · On-site",
     start: "Jan 2024",
     end: "Present",
     description:
@@ -56,11 +56,11 @@ const experiences: ExperienceItem[] = [
     role: "Co-Founder and CEO",
     company: "WebsDady",
     type: "Self-employed",
-    location: "Xi'an, Shaanxi, China · On-site",
+    location: "Xi’an, Shaanxi, China · On-site",
     start: "Jan 2024",
     end: "Present",
     description:
-      "Digital transformation partner providing web development, e-commerce solutions, digital marketing, SEO, and innovation-driven strategies. Helped global businesses achieve strong online presence.",
+      "Digital transformation partner providing web development, e-commerce solutions, digital marketing, SEO, and innovation-driven strategies. Helped global businesses achieve a strong online presence.",
     skills: [
       "Digital Marketing",
       "E-commerce",
