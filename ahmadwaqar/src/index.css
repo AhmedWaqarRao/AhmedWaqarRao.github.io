@@ -103,3 +103,11 @@ main .bg-white.rounded-lg:hover {
 @media (prefers-reduced-motion: reduce) {
   .page-enter { animation: none; }
 }
+
+/* Scroll-reveal (added/removed by useScrollReveal) */
+.rv {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease var(--rv-delay, 0ms), transform 0.6s ease var(--rv-delay, 0ms);
+}
+.rv.rv-in { opacity: 1; transform: none; }

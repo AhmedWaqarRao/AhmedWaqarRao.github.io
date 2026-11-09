@@ -11,6 +11,7 @@ import Publications from "./pages/publications";
 import Education from "./pages/education";
 import Skills from "./pages/skills";
 import Interests from "./pages/interests";
+import useScrollReveal from "./hooks/useScrollReveal";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -31,9 +32,15 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-indigo-700 focus:shadow-lg"
+      >
+        Skip to content
+      </a>
       <Sidebar />
 
-      <main className="min-h-screen lg:ml-72 pt-20 lg:pt-8 px-4 sm:px-6 lg:px-10 pb-12">
+      <main id="main-content" className="min-h-screen lg:ml-72 pt-20 lg:pt-8 px-4 sm:px-6 lg:px-10 pb-12">
         <div className="max-w-6xl mx-auto">
           <AnimatedRoutes />
         </div>
@@ -44,6 +51,7 @@ function App() {
 
 function AnimatedRoutes() {
   const { pathname } = useLocation();
+  useScrollReveal(pathname);
   return (
     <div key={pathname} className="page-enter">
           <Routes>

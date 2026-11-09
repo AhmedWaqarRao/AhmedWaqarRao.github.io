@@ -354,7 +354,7 @@ const Certifications: FC = () => {
                   onClick={() => handleShowImage(certification.imageUrl)}
                 >
                   {certification.imageUrl ? (
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={certification.imageUrl}
                       alt={certification.title}
                       className="w-full h-full object-cover"
@@ -392,7 +392,7 @@ const Certifications: FC = () => {
               </button>
             </div>
             <div className="p-4">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={selectedImage} 
                 alt="Certificate" 
                 className="w-full h-auto max-h-[70vh] object-contain"

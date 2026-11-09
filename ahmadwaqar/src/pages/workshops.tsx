@@ -216,7 +216,7 @@ const WorkshopsConferences: FC = () => {
                   onClick={() => setSelectedImage(event.imageUrl || null)}
                 >
                   {event.imageUrl ? (
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={event.imageUrl}
                       alt={event.title}
                       className="w-full h-full object-cover"
@@ -247,7 +247,7 @@ const WorkshopsConferences: FC = () => {
               </button>
             </div>
             <div className="p-4">
-              <img
+              <img loading="lazy" decoding="async"
                 src={selectedImage}
                 alt="Event"
                 className="w-full h-auto max-h-[70vh] object-contain rounded"
