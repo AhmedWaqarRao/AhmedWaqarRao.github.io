@@ -337,18 +337,26 @@ const Home: FC = () => {
         <div className="flex flex-col gap-2 text-gray-700">
           <p>
             📫 <span className="font-semibold">Email:</span>{" "}
-            <a href="mailto:ahmedwaqarrao.909@gmail.com" className="text-blue-600 hover:underline">
-              ahmedwaqarrao.909@gmail.com
+            <a href="mailto:awrao.261@gmail.com" className="text-blue-600 hover:underline">
+              awrao.261@gmail.com
             </a>
           </p>
           <p>
-            📞 <span className="font-semibold">Phone:</span> 
-            <a href="tel:+923064922957" className="text-blue-600 hover:underline ml-1">+92 306 4922957</a> / 
-            <a href="tel:+8617792251931" className="text-blue-600 hover:underline"> +86 177 92251931</a>
+            🎓 <span className="font-semibold">University Email:</span>{" "}
+            <a href="mailto:ahmedwaqar261@mail.nwpu.edu.cn" className="text-blue-600 hover:underline">
+              ahmedwaqar261@mail.nwpu.edu.cn
+            </a>
           </p>
           <p>
-            📍 <span className="font-semibold">Address:</span> Xian, Shaanxi, P.R China <br /> 
-            School of Computer Science, Northwestern Polytechnical University, 710072
+            📞 <span className="font-semibold">Phone:</span>{" "}
+            <a href="tel:+923064922957" className="text-blue-600 hover:underline">+92 306 4922957</a> /{" "}
+            <a href="tel:+8613193302925" className="text-blue-600 hover:underline">+86 13193302925</a>
+          </p>
+          <p>
+            💬 <span className="font-semibold">WeChat:</span> _3DAlliance / +86 13193302925
+          </p>
+          <p>
+            📍 <span className="font-semibold">Address:</span> School of Computer Science, Northwestern Polytechnical University, 1 Dongxiang Road, Chang'an District, Xi'an, Shaanxi, 710129, P.R. China
           </p>
         </div>
 
@@ -361,7 +369,7 @@ const Home: FC = () => {
             <Github size={20} /> GitHub
           </a>
 
-          <a href="mailto:ahmedwaqarrao.909@gmail.com" className="flex items-center gap-2 text-red-600 hover:text-red-800">
+          <a href="mailto:awrao.261@gmail.com" className="flex items-center gap-2 text-red-600 hover:text-red-800">
             <Mail size={20} /> Email
           </a>
 
@@ -369,7 +377,7 @@ const Home: FC = () => {
             <Globe size={20} /> ORCID
           </a>
 
-          <a href="https://wa.me/923064922957" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-600 hover:text-green-800">
+          <a href="https://wa.me/8613193302925" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-600 hover:text-green-800">
             <MessageCircle size={20} /> WhatsApp
           </a>
         </div>

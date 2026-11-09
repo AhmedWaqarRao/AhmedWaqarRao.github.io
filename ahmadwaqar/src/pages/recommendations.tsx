@@ -49,13 +49,6 @@ const recommendations: Recommendation[] = [
     text: `I’ve had the pleasure of working with Ahmed Waqar on multiple research papers and interdisciplinary projects... He consistently brings a high level of expertise and professionalism to every project he’s involved in.`,
   },
   {
-    name: "Umar Shahbaz Khan",
-    position: "Professor at NUST and Director of National Center of Robotics and Automation",
-    relation: "Was Ahmed Waqar’s teacher",
-    date: "April 19, 2025",
-    text: `I am pleased to offer my strong recommendation for Mr. Ahmed Waqar Rao... He possesses a solid interdisciplinary foundation, a deep commitment to academic excellence, and the potential to make significant contributions to his domain.`,
-  },
-  {
     name: "Waleed Bin Inqiad",
     position: "PhD Scholar | Aston | Visiting Student @ Polimi",
     relation: "Reported directly to Ahmed Waqar",
