@@ -65,7 +65,7 @@ main .bg-white.rounded-lg {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #a5b4fc, #67e8f9);
+  background: linear-gradient(90deg, #c7d2fe, #93c5fd);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

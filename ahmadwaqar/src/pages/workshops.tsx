@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import PageHeader from "../components/PageHeader";
-import { Mic } from "lucide-react";
+import { Mic, Globe, School } from "lucide-react";
 import { Download, X, MapPin, Calendar, Info } from "lucide-react";
 
 interface Event {
@@ -129,7 +129,7 @@ const WorkshopsConferences: FC = () => {
                 : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
             }`}
           >
-            🌍 Conferences
+            <span className="inline-flex items-center gap-2"><Globe size={16} /> Conferences</span>
           </button>
           <button
             onClick={() => setTab("workshops")}
@@ -139,8 +139,7 @@ const WorkshopsConferences: FC = () => {
                 : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
             }`}
           >
-            
-            🏫 Workshops
+            <span className="inline-flex items-center gap-2"><School size={16} /> Workshops</span>
           </button>
           
         </div>

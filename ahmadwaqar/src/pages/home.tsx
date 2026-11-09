@@ -167,12 +167,11 @@ const Home: FC = () => {
             <h1 className="hero-title mt-4 text-4xl sm:text-5xl font-bold leading-tight">
               Ahmed Waqar <span className="text-gradient">Rao</span>
             </h1>
-            <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-300">
-              Passionate about <span className="font-semibold text-white">Deep Learning</span>,{" "}
-              <span className="font-semibold text-white">Machine Learning</span>, and{" "}
+            <p className="mt-4 max-w-xl mx-auto xl:mx-0 text-base sm:text-lg leading-relaxed text-slate-300">
+              Passionate about <span className="font-semibold text-white">Deep Learning</span>,
+              Machine Learning, and{" "}
               <span className="font-semibold text-white">Computer Vision</span>, particularly
-              in the technology sector using{" "}
-              <span className="italic text-cyan-200">Unmanned Aerial Vehicles (UAVs) 🚁</span>.
+              in the technology sector using Unmanned Aerial Vehicles (UAVs).
             </p>
 
             <div className="mt-7 flex flex-wrap justify-center xl:justify-start gap-3">
@@ -228,26 +227,26 @@ const Home: FC = () => {
         <div className="space-y-5 text-[1.0625rem] leading-8 text-slate-600">
           <p>
             I am a passionate researcher and engineer focused on applying my expertise in{" "}
-            <span className="font-semibold text-slate-900">
+            <span className="font-medium text-slate-800">
               Deep Learning, Machine Learning, and Computer Vision{" "}
             </span>
-            to optimize Unmanned Aerial Vehicles (UAVs) for resource-constrained edge environments. 🚁
+            to optimize Unmanned Aerial Vehicles (UAVs) for resource-constrained edge environments.
             My current research involves developing edge-based adaptive selection methods for efficient UAV target detection,
             tackling critical challenges like computational limitations, energy efficiency, and latency to enable real-time{" "}
-            <span className="font-semibold text-slate-900">object detection and segmentation</span> in demanding scenarios.
+            <span className="font-medium text-slate-800">object detection and segmentation</span> in demanding scenarios.
           </p>
           <p>
             Central to my work is architecting lightweight, high-performance models using state-of-the-art algorithms like YOLO,
             refined with advanced techniques such as pruning and attention mechanisms. I bridge the gap between theoretical innovation
             and practical deployment, successfully porting these models to edge devices like the NVIDIA Jetson AGX Xavier to achieve
             high-speed inference for real-world applications. My research has direct impact across critical domains such as{" "}
-            <span className="font-semibold text-slate-900">
+            <span className="font-medium text-slate-800">
               precision agriculture, wildlife monitoring, disaster response, and industrial automation
             </span>
             .
           </p>
           <p>
-            I am dedicated to continuous learning 📚 and interdisciplinary collaboration, striving to push the boundaries of AI
+            I am dedicated to continuous learning and interdisciplinary collaboration, striving to push the boundaries of AI
             integration in UAV systems. My goal is to contribute meaningfully to the field by delivering scalable, robust, and efficient
             AI solutions that bridge academic research with tangible, real-world impact.
           </p>

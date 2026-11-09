@@ -1,7 +1,7 @@
 // src/pages/Education.tsx
 import { FC, useState } from "react";
 import PageHeader from "../components/PageHeader";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 
 interface EducationItem {
   institution: string;
@@ -10,7 +10,7 @@ interface EducationItem {
   grade?: string;
   courses?: string[];
   logo?: string;
-  transcript?: string; // ✅ new field
+  transcript?: string; 
 }
 
 
@@ -33,7 +33,7 @@ const education: EducationItem[] = [
     "Advanced Operating Systems",
     "Scientific Writing",
   ],
-  transcript: "/certifications/ms.pdf", // ✅ add transcript file path
+  transcript: "/certifications/ms.pdf", 
 },
 
   {
@@ -126,7 +126,7 @@ const EducationCard: FC<{ edu: EducationItem }> = ({ edu }) => {
                   key={i}
                   className="p-2 bg-gray-50 rounded-lg border hover:bg-gray-100 transition"
                 >
-                  📘 {course}
+                  <span className="inline-flex items-center gap-2"><BookOpen size={14} className="shrink-0 text-indigo-500" /> {course}</span>
                 </li>
               )
             )}
@@ -138,7 +138,7 @@ const EducationCard: FC<{ edu: EducationItem }> = ({ edu }) => {
               onClick={() => setShowCourses(!showCourses)}
               className="mt-3 text-indigo-600 font-medium hover:underline text-sm"
             >
-              {showCourses ? "Hide Courses ▲" : "Show More Courses ▼"}
+              <span className="inline-flex items-center gap-1">{showCourses ? "Hide Courses" : "Show More Courses"}{showCourses ? <ChevronUp size={16} /> : <ChevronDown size={16} />}</span>
             </button>
           )}
         </div>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Users } from "lucide-react";
+import { Users, Mail, Phone, Globe } from "lucide-react";
 import Section from "./Section";
 
 const refAccent: Record<string, { bar: string; name: string }> = {
@@ -18,7 +18,7 @@ const references = [
     email: "zhangyu@nwpu.edu.cn",
     phone: "(+86) 13891997511",
     website: "https://yuzhang-nwpu.github.io/yuzhang/",
-    relation: "🎓 Academic Mentor",
+    relation: "Academic Mentor",
     color: "blue",
   },
   {
@@ -30,7 +30,7 @@ const references = [
     email: "u.shahbaz@ceme.nust.edu.pk",
     phone: "(+92) 3005533775",
     website: undefined as string | undefined,
-    relation: "🎓 Former Teacher & Research Supervisor",
+    relation: "Former Teacher & Research Supervisor",
     color: "green",
   },
   {
@@ -42,7 +42,7 @@ const references = [
     email: "hamid.jabbar@ceme.nust.edu.pk",
     phone: "(+92) 3005274026",
     website: undefined as string | undefined,
-    relation: "🎓 Department Head & Mentor",
+    relation: "Department Head & Mentor",
     color: "indigo",
   },
 ];
@@ -66,20 +66,20 @@ const References: FC = () => (
 
                 <div className="mt-3 space-y-1 text-sm break-words">
                   <p>
-                    <span className="font-medium text-slate-800">📧 Email:</span>{" "}
+                    <span className="inline-flex items-center gap-1.5 font-medium text-slate-800"><Mail size={14} /> Email:</span>{" "}
                     <a href={`mailto:${ref.email}`} className={contactLink}>
                       {ref.email}
                     </a>
                   </p>
                   <p>
-                    <span className="font-medium text-slate-800">📞 Phone:</span>{" "}
+                    <span className="inline-flex items-center gap-1.5 font-medium text-slate-800"><Phone size={14} /> Phone:</span>{" "}
                     <a href={`tel:${ref.phone.replace(/[^+\d]/g, "")}`} className={contactLink}>
                       {ref.phone}
                     </a>
                   </p>
                   {ref.website && (
                     <p>
-                      <span className="font-medium text-slate-800">🌐 Website:</span>{" "}
+                      <span className="inline-flex items-center gap-1.5 font-medium text-slate-800"><Globe size={14} /> Website:</span>{" "}
                       <a
                         href={ref.website}
                         target="_blank"
