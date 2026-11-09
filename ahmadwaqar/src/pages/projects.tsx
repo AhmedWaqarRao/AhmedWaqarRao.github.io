@@ -55,7 +55,6 @@ const projects: Project[] = [
     period: "Jul 2025",
     institution: "GitHub Project",
     description: "Proposed a time-aware deep reinforcement learning framework for dynamic multi-agent interception tasks in complex environments.",
-    github: "https://github.com/AhmedWaqarRao/Time-Aware-Deep-Reinforcement-Learning-Framework-for-Dynamic-Multi-Agent-Interception",
   },
   {
     title: "Passive Two-Phase Flow Regime Identification based on Wavelet Transform Scalogram and Deep Learning",
