@@ -1,5 +1,6 @@
 // src/pages/Experience.tsx
 import { FC } from "react";
+import PageHeader from "../components/PageHeader";
 import { Briefcase, Calendar } from "lucide-react";
 
 interface ExperienceItem {
@@ -175,8 +176,8 @@ const experiences: ExperienceItem[] = [
 
 const Experience: FC = () => {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-10 text-center">Experience</h1>
+    <div className="max-w-5xl mx-auto">
+      <PageHeader icon={<Briefcase size={24} />} title="Experience" subtitle="Roles in research, engineering and leadership" />
       <div className="space-y-8">
         {experiences.map((exp, idx) => (
           <div

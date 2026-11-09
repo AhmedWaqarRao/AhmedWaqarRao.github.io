@@ -1,5 +1,7 @@
 // src/pages/Education.tsx
 import { FC, useState } from "react";
+import PageHeader from "../components/PageHeader";
+import { GraduationCap } from "lucide-react";
 
 interface EducationItem {
   institution: string;
@@ -92,8 +94,8 @@ const education: EducationItem[] = [
 
 const Education: FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-4xl font-bold text-center mb-10">Education</h1>
+    <div>
+      <PageHeader icon={<GraduationCap size={24} />} title="Education" subtitle="Academic background and degrees" />
 
       <div className="space-y-6 max-w-5xl mx-auto">
         {education.map((edu, index) => (

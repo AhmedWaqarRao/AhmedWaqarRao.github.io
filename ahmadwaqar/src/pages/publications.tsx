@@ -1,4 +1,6 @@
 import { FC } from "react";
+import PageHeader from "../components/PageHeader";
+import { BookOpen } from "lucide-react";
 
 interface Publication {
   id: number;
@@ -66,8 +68,8 @@ const publications: Publication[] = [
 
 const Publications: FC = () => {
   return (
-    <div className="p-6 md:p-12">
-      <h1 className="text-3xl font-bold mb-8 text-gray-900">📚 Publications</h1>
+    <div>
+      <PageHeader icon={<BookOpen size={24} />} title="Publications" subtitle="Research papers and ongoing work" />
 
       <div className="grid gap-8 md:grid-cols-2">
         {publications.map((pub) => (

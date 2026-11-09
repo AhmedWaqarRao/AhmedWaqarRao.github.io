@@ -1,4 +1,6 @@
 import { FC, useState } from "react";
+import PageHeader from "../components/PageHeader";
+import { Mic } from "lucide-react";
 import { Download, X, MapPin, Calendar, Info } from "lucide-react";
 
 interface Event {
@@ -113,11 +115,9 @@ const WorkshopsConferences: FC = () => {
   const data = tab === "conferences" ? conferences : workshops;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 p-4 md:p-10">
+    <div>
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-emerald-800">
-          🎓 Workshops & Conferences
-        </h1>
+        <PageHeader icon={<Mic size={24} />} title="Workshops & Conferences" subtitle="Talks, forums and training events" />
 
         {/* Tabs */}
         <div className="flex justify-center mb-10">
@@ -125,8 +125,8 @@ const WorkshopsConferences: FC = () => {
             onClick={() => setTab("conferences")}
             className={`px-6 py-2 rounded-l-full font-semibold ${
               tab === "conferences"
-                ? "bg-emerald-600 text-white"
-                : "bg-emerald-100 text-emerald-700 hover:bg-emerald-200"
+                ? "bg-indigo-600 text-white"
+                : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
             }`}
           >
             🌍 Conferences
@@ -135,8 +135,8 @@ const WorkshopsConferences: FC = () => {
             onClick={() => setTab("workshops")}
             className={`px-6 py-2 rounded-r-full font-semibold ${
               tab === "workshops"
-                ? "bg-emerald-600 text-white"
-                : "bg-emerald-100 text-emerald-700 hover:bg-emerald-200"
+                ? "bg-indigo-600 text-white"
+                : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
             }`}
           >
             
@@ -150,7 +150,7 @@ const WorkshopsConferences: FC = () => {
           {data.map((event, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between border border-emerald-100 hover:shadow-2xl transition duration-300 hover:-translate-y-1"
+              className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between border border-indigo-100 hover:shadow-2xl transition duration-300 hover:-translate-y-1"
             >
               <div>
                 <h2 className="text-lg md:text-xl font-bold text-gray-800 leading-snug">
@@ -158,7 +158,7 @@ const WorkshopsConferences: FC = () => {
                 </h2>
 
                 <div className="flex justify-between items-center mt-3">
-                  <p className="text-sm text-emerald-600 font-medium">
+                  <p className="text-sm text-indigo-600 font-medium">
                     {event.issuer}
                   </p>
                   <p className="flex items-center gap-1 text-xs md:text-sm text-gray-500">
@@ -168,7 +168,7 @@ const WorkshopsConferences: FC = () => {
 
                 {event.location && (
                   <p className="flex items-center gap-1 mt-2 text-sm text-gray-600">
-                    <MapPin size={14} className="text-emerald-600" />
+                    <MapPin size={14} className="text-indigo-600" />
                     {event.location}
                   </p>
                 )}
@@ -180,13 +180,13 @@ const WorkshopsConferences: FC = () => {
                       onClick={() =>
                         setExpanded(expanded === index ? null : index)
                       }
-                      className="flex items-center gap-1 text-emerald-700 text-sm font-medium hover:underline"
+                      className="flex items-center gap-1 text-indigo-700 text-sm font-medium hover:underline"
                     >
                       <Info size={16} />
                       {expanded === index ? "Hide Details" : "View Details"}
                     </button>
                     {expanded === index && (
-                      <p className="mt-2 text-sm text-gray-700 bg-emerald-50 p-3 rounded-lg">
+                      <p className="mt-2 text-sm text-gray-700 bg-indigo-50 p-3 rounded-lg">
                         {event.details}
                       </p>
                     )}
@@ -200,7 +200,7 @@ const WorkshopsConferences: FC = () => {
                     {event.skills.map((skill, skillIndex) => (
                       <span
                         key={skillIndex}
-                        className="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full shadow-sm"
+                        className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full shadow-sm"
                       >
                         {skill}
                       </span>
@@ -212,7 +212,7 @@ const WorkshopsConferences: FC = () => {
               {/* Thumbnail */}
               <div className="mt-6 flex justify-center">
                 <div
-                  className="w-32 h-24 md:w-36 md:h-28 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center overflow-hidden cursor-pointer hover:ring-2 hover:ring-emerald-400"
+                  className="w-32 h-24 md:w-36 md:h-28 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center overflow-hidden cursor-pointer hover:ring-2 hover:ring-indigo-400"
                   onClick={() => setSelectedImage(event.imageUrl || null)}
                 >
                   {event.imageUrl ? (
@@ -257,7 +257,7 @@ const WorkshopsConferences: FC = () => {
               <a
                 href={selectedImage}
                 download
-                className="flex items-center text-green-600 hover:text-green-800 font-medium"
+                className="flex items-center text-blue-600 hover:text-blue-800 font-medium"
               >
                 <Download size={16} className="mr-1" /> Download Image
               </a>

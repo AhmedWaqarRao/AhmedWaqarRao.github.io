@@ -1,5 +1,7 @@
 // src/pages/Certifications.tsx
 import { FC } from "react";
+import PageHeader from "../components/PageHeader";
+import { Award } from "lucide-react";
 import {  Download, X } from "lucide-react";
 import { useState } from "react";
 
@@ -304,11 +306,9 @@ const Certifications: FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 md:p-8">
+    <div>
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-indigo-800">
-          Licenses & Certifications
-        </h1>
+        <PageHeader icon={<Award size={24} />} title="Licenses & Certifications" subtitle="Courses and professional credentials" />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((certification, index) => (

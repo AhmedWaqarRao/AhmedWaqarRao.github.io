@@ -1,5 +1,7 @@
 // src/pages/Projects.tsx
 import { FC } from "react";
+import PageHeader from "../components/PageHeader";
+import { FolderGit2 } from "lucide-react";
 import { Github } from "lucide-react";
 
 interface Project {
@@ -479,8 +481,8 @@ const projects: Project[] = [
 
 const Projects: FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-4xl font-bold text-center mb-10">Projects</h1>
+    <div>
+      <PageHeader icon={<FolderGit2 size={24} />} title="Projects" subtitle="Open-source and academic projects" />
 
       <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {projects.map((project, index) => (

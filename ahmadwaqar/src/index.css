@@ -75,24 +75,15 @@ a:focus-visible, button:focus-visible {
   html { scroll-behavior: auto; }
 }
 
-/* Consistent page titles across every route */
-main h1:not(.hero-title) {
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-weight: 700;
-  color: #0f172a !important;
-  text-align: center !important;
-  letter-spacing: -0.02em;
-  margin-bottom: 2.5rem !important;
-}
-main h1:not(.hero-title)::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 4px;
-  margin: 0.75rem auto 0;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-}
+/* Page titles are rendered by <PageHeader>; this keeps them tight and on-brand */
+.page-title { font-family: "Space Grotesk", "Inter", sans-serif; letter-spacing: -0.02em; }
+
+/* Readable secondary text on every page (WCAG AA on white) */
+main .text-gray-400 { color: #64748b; }
+main .text-gray-500 { color: #55657a; }
+main .text-gray-600 { color: #475569; }
+main .text-gray-700 { color: #334155; }
+main .text-xs { font-size: 0.8125rem; line-height: 1.25rem; }
 
 .page-enter { animation: fade-up 0.5s ease both; }
 

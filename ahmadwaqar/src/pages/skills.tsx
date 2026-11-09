@@ -1,4 +1,5 @@
 import React from "react";
+import PageHeader from "../components/PageHeader";
 import {
   Code,
   Wrench,
@@ -11,17 +12,10 @@ import {
 
 export default function Skills() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-6">
+    <section>
       <div className="max-w-6xl mx-auto">
         {/* Page Title */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900">
-            🛠 Skills & Expertise
-          </h1>
-          <p className="text-gray-600 mt-3">
-            A blend of technical depth, industry experience, and interpersonal abilities.
-          </p>
-        </div>
+        <PageHeader icon={<Wrench size={24} />} title="Skills & Expertise" subtitle="A blend of technical depth, industry experience, and interpersonal abilities." />
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
