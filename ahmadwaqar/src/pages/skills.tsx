@@ -1,21 +1,27 @@
 import React from "react";
-import PageHeader from "../components/PageHeader";
-import LanguageProficiency from "../components/LanguageProficiency";
 import {
   Code,
   Wrench,
   BookOpen,
   Briefcase,
   Users,
+  Languages,
   Layers,
 } from "lucide-react";
 
 export default function Skills() {
   return (
-    <section>
+    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Page Title */}
-        <PageHeader icon={<Wrench size={24} />} title="Skills & Expertise" subtitle="A blend of technical depth, industry experience, and interpersonal abilities." />
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900">
+            🛠 Skills & Expertise
+          </h1>
+          <p className="text-gray-600 mt-3">
+            A blend of technical depth, industry experience, and interpersonal abilities.
+          </p>
+        </div>
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -96,6 +102,14 @@ export default function Skills() {
             color="orange"
           />
 
+          {/* Language Skills */}
+          <SkillCard
+            title="Language Skills"
+            icon={<Languages size={22} className="text-purple-600" />}
+            items={["English (Fluent)", "Chinese (HSK-3)", "Urdu (Native)"]}
+            color="purple"
+          />
+
           {/* Other Software */}
           <SkillCard
             title="Other Software"
@@ -111,10 +125,6 @@ export default function Skills() {
             ]}
             color="pink"
           />
-        </div>
-
-        <div className="mt-10">
-          <LanguageProficiency />
         </div>
       </div>
     </section>

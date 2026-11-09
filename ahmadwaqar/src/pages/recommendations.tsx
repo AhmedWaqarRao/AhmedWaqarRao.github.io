@@ -1,7 +1,4 @@
 import { FC } from "react";
-import PageHeader from "../components/PageHeader";
-import References from "../components/References";
-import { MessageSquareQuote } from "lucide-react";
 
 interface Recommendation {
   name: string;
@@ -104,8 +101,8 @@ const recommendations: Recommendation[] = [
 
 const Recommendations: FC = () => {
   return (
-    <div>
-      <PageHeader icon={<MessageSquareQuote size={24} />} title="Recommendations" subtitle="What mentors and colleagues say" />
+    <div className="p-6 md:p-12">
+      <h1 className="text-3xl font-bold mb-8 text-gray-900">Recommendations</h1>
 
       <div className="grid gap-6 md:grid-cols-2">
         {recommendations.map((rec, idx) => (
@@ -121,10 +118,6 @@ const Recommendations: FC = () => {
             <p className="text-gray-700 mt-4 leading-relaxed">{rec.text}</p>
           </div>
         ))}
-      </div>
-
-      <div className="mt-12">
-        <References />
       </div>
     </div>
   );

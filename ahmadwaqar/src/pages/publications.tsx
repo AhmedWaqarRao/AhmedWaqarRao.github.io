@@ -1,6 +1,4 @@
 import { FC } from "react";
-import PageHeader from "../components/PageHeader";
-import { BookOpen } from "lucide-react";
 
 interface Publication {
   id: number;
@@ -10,11 +8,11 @@ interface Publication {
   tags: string[];
 }
 
-export const publications: Publication[] = [
+const publications: Publication[] = [
   {
     id: 1,
     title:
-      "Adaptive Precision Spraying Tasks on Edge Device Using Real-Time Crop Segmentation",
+      "🚀 Adaptive-Precision-Spraying-Tasks-on-Edge-Device-Using-Real-Time-Crop-Segmentation",
     subtitle:
       '"Adaptive Edge AI Deployment for Real-Time Crop Segmentation Using Scenario-Aware Dynamic Model Pruning"',
     description:
@@ -30,7 +28,7 @@ export const publications: Publication[] = [
   {
     id: 2,
     title:
-      "Passive Two-Phase Flow Regime Identification based on Wavelet Transform Scalogram and Deep Learning",
+      "Passive-Two-Phase-Flow-Regime-Identification-based-on-Wavelet-Transform-Scalogram-and-Deep-Learning",
     subtitle: "",
     description:
       "This research focuses on two-phase flow regime identification using wavelet transform scalograms combined with deep learning architectures for robust, accurate classification of complex flow patterns.",
@@ -68,8 +66,8 @@ export const publications: Publication[] = [
 
 const Publications: FC = () => {
   return (
-    <div>
-      <PageHeader icon={<BookOpen size={24} />} title="Publications" subtitle="Research papers and ongoing work" />
+    <div className="p-6 md:p-12">
+      <h1 className="text-3xl font-bold mb-8 text-gray-900">📚 Publications</h1>
 
       <div className="grid gap-8 md:grid-cols-2">
         {publications.map((pub) => (

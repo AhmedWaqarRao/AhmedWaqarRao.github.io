@@ -1,6 +1,5 @@
 // src/pages/Experience.tsx
 import { FC } from "react";
-import PageHeader from "../components/PageHeader";
 import { Briefcase, Calendar } from "lucide-react";
 
 interface ExperienceItem {
@@ -21,7 +20,7 @@ const experiences: ExperienceItem[] = [
     role: "Graduate Research Assistant",
     company: "Northwestern Polytechnical University",
     type: "Contract",
-    location: "Xi’an, Shaanxi, China · On-site",
+    location: "Xi'an, Shaanxi, China · On-site",
     start: "Sep 2023",
     end: "Present",
     description:
@@ -40,7 +39,7 @@ const experiences: ExperienceItem[] = [
     role: "Co-Founder and CEO",
     company: "3Dim Engineering Solutions",
     type: "Self-employed",
-    location: "Xi’an, Shaanxi, China · On-site",
+    location: "Xi'an, Shaanxi, China · On-site",
     start: "Jan 2024",
     end: "Present",
     description:
@@ -56,11 +55,11 @@ const experiences: ExperienceItem[] = [
     role: "Co-Founder and CEO",
     company: "WebsDady",
     type: "Self-employed",
-    location: "Xi’an, Shaanxi, China · On-site",
+    location: "Xi'an, Shaanxi, China · On-site",
     start: "Jan 2024",
     end: "Present",
     description:
-      "Digital transformation partner providing web development, e-commerce solutions, digital marketing, SEO, and innovation-driven strategies. Helped global businesses achieve a strong online presence.",
+      "Digital transformation partner providing web development, e-commerce solutions, digital marketing, SEO, and innovation-driven strategies. Helped global businesses achieve strong online presence.",
     skills: [
       "Digital Marketing",
       "E-commerce",
@@ -176,8 +175,8 @@ const experiences: ExperienceItem[] = [
 
 const Experience: FC = () => {
   return (
-    <div className="max-w-5xl mx-auto">
-      <PageHeader icon={<Briefcase size={24} />} title="Experience" subtitle="Roles in research, engineering and leadership" />
+    <div className="max-w-5xl mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold mb-10 text-center">Experience</h1>
       <div className="space-y-8">
         {experiences.map((exp, idx) => (
           <div

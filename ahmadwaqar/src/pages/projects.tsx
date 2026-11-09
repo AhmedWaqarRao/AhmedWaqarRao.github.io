@@ -1,7 +1,5 @@
 // src/pages/Projects.tsx
 import { FC } from "react";
-import PageHeader from "../components/PageHeader";
-import { FolderGit2 } from "lucide-react";
 import { Github } from "lucide-react";
 
 interface Project {
@@ -12,7 +10,7 @@ interface Project {
   github?: string;
 }
 
-export const projects: Project[] = [
+const projects: Project[] = [
   {
     title: "Efficient Real-Time Dynamic Pruning Techniques for Optimizing Target Detection Models in UAVs",
     period: "Jul 2025",
@@ -66,7 +64,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Passive-Two-Phase-Flow-Regime-Identification-based-on-Wavelet-Transform-Scalogram-and-Deep-Learning.",
   },
   {
-    title: "TensorRT Backend for ONNX",
+    title: "TensorRT Backend For ONNX",
     period: "Feb 2025",
     institution: "GitHub Project",
     description: "Implemented TensorRT backend optimizations for ONNX models to enable efficient deep learning inference.",
@@ -87,7 +85,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Complete-BlackJack-Card-Game-in-Python.",
   },
   {
-    title: "Only Train Once (OTO): Automatic One-Shot DNN Training and Compression Framework",
+    title: "Only Train Once (OTO): Automatic One-Shot DNN Training And Compression Framework",
     period: "Oct 2024",
     institution: "GitHub Project",
     description: "Introduced a one-shot deep neural network training and compression framework for resource-efficient AI models.",
@@ -122,7 +120,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/Convolutional_Neural_Network_-CNN-_Project",
   },
   {
-    title: "Simulate a Banking System (OOP Project)",
+    title: "Simulate A Banking System (OOP Project)",
     period: "Aug 2024",
     institution: "GitHub Project",
     description: "Built an OOP-based banking system simulator with account management and transaction features.",
@@ -156,7 +154,7 @@ export const projects: Project[] = [
     description:
       "Trained YOLOv6 object detection framework on a custom dataset. Focused on dataset preparation, model fine-tuning, and achieving higher detection accuracy for real-world use cases.",
     github:
-      "https://github.com/AhmedWaqarRao/Training_YOLOv6_on_Custom_Data-",
+      "https://github.com/AhmedWaqarRao/Training_YOLOv6_on-Custom_Data-",
   },
   {
     title: "Enigma Machine Project",
@@ -233,15 +231,15 @@ export const projects: Project[] = [
 
   {
     title: "Design and Development of Olive Grading Mechanism & Pitting Machine (Final Year Project)",
-    period: "Aug 2021 – Jun 2022",
+    period: "Aug 2021 - Jun 2022",
     institution: "National University of Sciences and Technology (NUST)",
     description:
-      "Developed a semi-automated machine for grading and pitting olives using Geneva and Slider Crank Mechanisms. Designed 3D CAD models and hardware to reduce Pakistan’s dependence on imported olive oil.",
+      "Developed a semi-automated machine for grading and pitting olives using Geneva and Slider Crank Mechanisms. Designed 3D CAD models and hardware to reduce Pakistan's dependence on imported olive oil.",
     github:
       "https://github.com/AhmedWaqarRao/Design-and-Development-of-Olive-Pitting-and-Grading-Machine",
   },
   {
-    title: "24V to 12V & 24V Step Down Transformer (Actuating System Project)",
+    title: "24V To 12V & 24V Step Down Transformer (Actuating System Project)",
     institution: "National University of Sciences and Technology (NUST)",
     description:
       "Designed and implemented a step-down transformer system for voltage conversion, working with electric machines and current-carrying coils.",
@@ -295,7 +293,7 @@ export const projects: Project[] = [
     institution: "Northwestern Polytechnical University",
     description:
       "Developed a complete BlackJack card game implementation in Python with full game logic.",
-    github: "https://github.com/AhmedWaqarRao/Complete-BlackJack-Card-Game-in-Python.",
+    github: "https://github.com/AhmedWaqarRao/Complete-BlackJack-Card-Game-in-Python",
   },
   {
     title: "CNN on Built-in Datasets",
@@ -314,7 +312,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/Convolutional_Neural_Network_-CNN-_Project",
   },
   {
-    title: "Calendar of a Year in C++",
+    title: "Calendar of a Year In C++",
     institution: "National University of Sciences and Technology (NUST)",
     description: "Developed a calendar application for any given year using C++.",
   },
@@ -325,7 +323,7 @@ export const projects: Project[] = [
       "Designed a circuit with LEDs that illuminate to indicate incoming calls through electric circuit analysis.",
   },
   {
-    title: "Data/Image Labeling & Annotation Projects",
+    title: "Data/Image Labelling & Annotation Projects",
     institution: "3Dim Engineering Solutions",
     description:
       "Created bounding boxes, added text tags, and annotated images using V7 Darwin Software with 2D/3D bounding boxes and semantic segmentation.",
@@ -336,10 +334,10 @@ export const projects: Project[] = [
     institution: "Northwestern Polytechnical University",
     description:
       "Applied Principal Component Analysis to reduce dimensionality of breast cancer dataset to 2 principal components.",
-    github: "https://github.com/AhmedWaqarRao/ML_Algorithms_7-PCA-Project-",
+    github: "https://github.com/AhmedWaqarRao/ML_Algorithms_7-PCA-Project",
   },
   {
-    title: "Enigma Machine for Cipher (Electrical and Software Workings)",
+    title: "Enigma Machine For Cypher (Electrical and Software Working)",
     institution: "National University of Sciences and Technology (NUST)",
     description:
       "Built an Enigma machine with electromechanical rotor mechanism that scrambles letters for encoding and decoding messages.",
@@ -361,7 +359,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_6_K-Means-Clustering_Project",
   },
   {
-    title: "Fruit Plucking Robot at National Engineering Robotics Competition",
+    title: "Fruit Plucking Robot At National Engineering Robotics Competition",
     institution: "National University of Sciences and Technology (NUST)",
     description:
       "Developed two robots (one autonomous, one wirelessly controlled) for fruit plucking with Arduino programming and electronic circuitry.",
@@ -400,7 +398,7 @@ export const projects: Project[] = [
     github: "https://github.com/AhmedWaqarRao/ML_Algorithms_5-SVM-Project",
   },
   {
-    title: "Predicting Flower Class Using SVM",
+    title: "Predicting Flowers Class using SVM",
     institution: "Northwestern Polytechnical University",
     description:
       "Applied SVM algorithm on iris dataset to classify flower types based on sepal and petal measurements.",
@@ -415,7 +413,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_4_Decision-Tree-and-Random-Forest-Project",
   },
   {
-    title: "Predicting Loan Repayment Using Various Features",
+    title: "Predicting Loan Return using Various Features",
     institution: "Northwestern Polytechnical University",
     description:
       "Applied Decision Tree and Random Forest classifiers to predict loan repayment using various customer features.",
@@ -423,7 +421,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_4_Decision-Tree-and-Random-Forest-Project",
   },
   {
-    title: "Predicting the Price Using Fake Data",
+    title: "Predicting the Price using Fake Data",
     institution: "Northwestern Polytechnical University",
     description:
       "Built a neural network with TensorFlow/Keras to predict prices based on features in a fake dataset.",
@@ -438,7 +436,7 @@ export const projects: Project[] = [
       "https://github.com/AhmedWaqarRao/ML_Algorithms_6_K-Means-Clustering_Project",
   },
   {
-    title: "Simulate a Banking System Using OOP (Library Management System)",
+    title: "Simulate A Banking System Using OOP (Library Management System)",
     institution: "Northwestern Polytechnical University",
     description:
       "Developed a banking system simulation using Object-Oriented Programming principles in Python.",
@@ -481,8 +479,8 @@ export const projects: Project[] = [
 
 const Projects: FC = () => {
   return (
-    <div>
-      <PageHeader icon={<FolderGit2 size={24} />} title="Projects" subtitle="Open-source and academic projects" />
+    <div className="min-h-screen bg-gray-100 p-8">
+      <h1 className="text-4xl font-bold text-center mb-10">Projects</h1>
 
       <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {projects.map((project, index) => (

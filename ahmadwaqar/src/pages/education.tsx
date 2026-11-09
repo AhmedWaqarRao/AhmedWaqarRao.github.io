@@ -1,7 +1,5 @@
 // src/pages/Education.tsx
 import { FC, useState } from "react";
-import PageHeader from "../components/PageHeader";
-import { GraduationCap, BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 
 interface EducationItem {
   institution: string;
@@ -10,15 +8,15 @@ interface EducationItem {
   grade?: string;
   courses?: string[];
   logo?: string;
-  transcript?: string; 
+  transcript?: string; // ✅ new field
 }
 
 
 const education: EducationItem[] = [
   {
   institution: "Northwestern Polytechnical University, China",
-  degree: "Master of Science (MS) in Computer Science and Technology",
-  period: "Aug 2023 – Jul 2026",
+  degree: "Master in Science (MS), Computer Sciences and Technology",
+  period: "Aug 2023 - Jul 2026",
   courses: [
     "Chinese Language I",
     "Chinese Language II",
@@ -33,14 +31,14 @@ const education: EducationItem[] = [
     "Advanced Operating Systems",
     "Scientific Writing",
   ],
-  transcript: "/certifications/ms.pdf", 
+  transcript: "/certifications/ms.pdf", // ✅ add transcript file path
 },
 
   {
     institution:
       "National University of Sciences and Technology (NUST), Pakistan",
     degree:
-      "Bachelor of Engineering (BE) in Mechatronics, Robotics, and Automation Engineering",
+      "Bachelor of Engineering (BE), Mechatronics, Robotics, and Automation Engineering",
     period: "2018 - 2022",
     courses: [
       "Data Structures and Object Oriented Programming",
@@ -94,8 +92,8 @@ const education: EducationItem[] = [
 
 const Education: FC = () => {
   return (
-    <div>
-      <PageHeader icon={<GraduationCap size={24} />} title="Education" subtitle="Academic background and degrees" />
+    <div className="min-h-screen bg-gray-100 p-8">
+      <h1 className="text-4xl font-bold text-center mb-10">Education</h1>
 
       <div className="space-y-6 max-w-5xl mx-auto">
         {education.map((edu, index) => (
@@ -126,7 +124,7 @@ const EducationCard: FC<{ edu: EducationItem }> = ({ edu }) => {
                   key={i}
                   className="p-2 bg-gray-50 rounded-lg border hover:bg-gray-100 transition"
                 >
-                  <span className="inline-flex items-center gap-2"><BookOpen size={14} className="shrink-0 text-indigo-500" /> {course}</span>
+                  📘 {course}
                 </li>
               )
             )}
@@ -138,7 +136,7 @@ const EducationCard: FC<{ edu: EducationItem }> = ({ edu }) => {
               onClick={() => setShowCourses(!showCourses)}
               className="mt-3 text-indigo-600 font-medium hover:underline text-sm"
             >
-              <span className="inline-flex items-center gap-1">{showCourses ? "Hide Courses" : "Show More Courses"}{showCourses ? <ChevronUp size={16} /> : <ChevronDown size={16} />}</span>
+              {showCourses ? "Hide Courses ▲" : "Show More Courses ▼"}
             </button>
           )}
         </div>

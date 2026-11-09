@@ -1,7 +1,5 @@
 // src/pages/Certifications.tsx
 import { FC } from "react";
-import PageHeader from "../components/PageHeader";
-import { Award } from "lucide-react";
 import {  Download, X } from "lucide-react";
 import { useState } from "react";
 
@@ -15,7 +13,7 @@ interface Certification {
   credentialUrl?: string;
 }
 
-export const certifications: Certification[] = [
+const certifications: Certification[] = [
   {
     title: "Advanced Learning Algorithms",
     issuer: "Coursera",
@@ -113,7 +111,7 @@ export const certifications: Certification[] = [
     credentialId: "VBZKNVVTMGQL",
     skills: ["TensorFlow", "PyTorch", "Data Science", "Artificial Intelligence (AI)"],
     imageUrl: "/certifications/deep-learning-specialization.png",
-    credentialUrl: "/certifications/Deep Learning Specialization.pdf",
+    credentialUrl: "/certifications/deep-learning-specialization.pdf",
   },
   {
     title: "Deep Learning with PyTorch: Generative Adversarial Network",
@@ -306,9 +304,11 @@ const Certifications: FC = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
-        <PageHeader icon={<Award size={24} />} title="Licenses & Certifications" subtitle="Courses and professional credentials" />
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10 text-indigo-800">
+          Licenses & Certifications
+        </h1>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((certification, index) => (
@@ -354,7 +354,7 @@ const Certifications: FC = () => {
                   onClick={() => handleShowImage(certification.imageUrl)}
                 >
                   {certification.imageUrl ? (
-                    <img loading="lazy" decoding="async"
+                    <img
                       src={certification.imageUrl}
                       alt={certification.title}
                       className="w-full h-full object-cover"
@@ -369,7 +369,7 @@ const Certifications: FC = () => {
                     onClick={() => handleShowCredential(certification.credentialUrl)}
                     className="flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm"
                   >
-                    <ExternalLink size={16} className="mr-1" /> Show Credential
+                    <ExternalLink size={16} className="mr-1" /> Show credential
                   </button>
                 )} */}
               </div>
@@ -392,7 +392,7 @@ const Certifications: FC = () => {
               </button>
             </div>
             <div className="p-4">
-              <img loading="lazy" decoding="async" 
+              <img 
                 src={selectedImage} 
                 alt="Certificate" 
                 className="w-full h-auto max-h-[70vh] object-contain"
