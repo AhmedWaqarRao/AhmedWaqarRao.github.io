@@ -1,6 +1,6 @@
 {
-  "short_name": "Ahmed Waqar Rao",
-  "name": "Ahmed Waqar Rao | AI Researcher",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#0b1020",
-  "background_color": "#0b1020"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
