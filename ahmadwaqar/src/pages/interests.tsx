@@ -56,13 +56,14 @@ const hobbies = [
 ];
 
 const Interests: FC = () => (
-  <div className="flex flex-col gap-8">
+  <div>
     <PageHeader
       icon={<Heart size={24} />}
       title="Interests"
       subtitle="What I enjoy beyond the lab: technology, engineering and sharing knowledge."
     />
-      <Section title="Interests" icon={<Lightbulb size={20} />}>
+    <div className="flex flex-col gap-8">
+      <Section title="Areas of Interest" icon={<Lightbulb size={20} />}>
         <div className="grid sm:grid-cols-2 gap-4">
           {interests.map((interest) => (
             <div
@@ -93,6 +94,7 @@ const Interests: FC = () => (
           ))}
         </div>
       </Section>
+    </div>
   </div>
 );
 
