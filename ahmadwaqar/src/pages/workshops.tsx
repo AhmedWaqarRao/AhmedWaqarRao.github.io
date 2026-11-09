@@ -123,7 +123,7 @@ const WorkshopsConferences: FC = () => {
         <div className="flex justify-center mb-10">
           <button
             onClick={() => setTab("conferences")}
-            className={`px-6 py-2 rounded-l-full font-semibold ${
+            className={`px-4 sm:px-6 py-2 rounded-l-full font-semibold ${
               tab === "conferences"
                 ? "bg-indigo-600 text-white"
                 : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
@@ -133,7 +133,7 @@ const WorkshopsConferences: FC = () => {
           </button>
           <button
             onClick={() => setTab("workshops")}
-            className={`px-6 py-2 rounded-r-full font-semibold ${
+            className={`px-4 sm:px-6 py-2 rounded-r-full font-semibold ${
               tab === "workshops"
                 ? "bg-indigo-600 text-white"
                 : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
