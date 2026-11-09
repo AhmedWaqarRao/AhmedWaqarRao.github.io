@@ -74,12 +74,12 @@ const Sidebar: FC = () => {
       {/* Sidebar: permanent on desktop, drawer on mobile */}
       <aside
         className={`fixed top-0 left-0 h-full w-72 max-w-[85vw] z-50 flex flex-col justify-between overflow-y-auto
-        bg-[#0b1020] text-slate-200 p-6 border-r border-white/10
+        bg-[#0b1020] text-slate-200 p-5 border-r border-white/10 sidebar-scroll
         transform transition-transform duration-300 lg:translate-x-0
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div>
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-6">
             <img
               src={`${process.env.PUBLIC_URL}/ahmadwaqar.jpg`}
               alt=""
@@ -91,7 +91,7 @@ const Sidebar: FC = () => {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-1">
+          <nav className="flex flex-col gap-0.5">
             {links.map(({ name, path, hash: linkHash, icon: Icon }) => {
               const active = isActive(path, linkHash);
               return (
@@ -100,7 +100,7 @@ const Sidebar: FC = () => {
                   to={{ pathname: path, hash: linkHash }}
                   onClick={() => setIsOpen(false)}
                   aria-current={active ? "page" : undefined}
-                  className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition ${
+                  className={`flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium transition ${
                     active
                       ? "bg-gradient-to-r from-indigo-500/90 to-cyan-500/70 text-white shadow-lg shadow-indigo-900/40"
                       : "text-slate-300 hover:bg-white/5 hover:text-white"
@@ -116,7 +116,7 @@ const Sidebar: FC = () => {
         <a
           href={`${process.env.PUBLIC_URL}/Ahmed%20Waqar%20Rao%20CV%20NPU%20(2).pdf`}
           download
-          className="mt-8 flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 to-cyan-500 shadow-lg shadow-indigo-900/40 hover:brightness-110 transition"
+          className="mt-6 flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 to-cyan-500 shadow-lg shadow-indigo-900/40 hover:brightness-110 transition"
         >
           <FileDown size={18} /> Download CV
         </a>

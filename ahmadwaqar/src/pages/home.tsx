@@ -147,11 +147,9 @@ const Home: FC = () => {
   return (
     <div className="flex flex-col gap-8">
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-3xl bg-[#0b1020] text-white shadow-2xl shadow-indigo-900/20 p-8 sm:p-12 reveal">
-        <div className="pointer-events-none absolute -top-24 -right-16 w-80 h-80 rounded-full bg-indigo-500/40 blur-3xl float-slow" />
-        <div className="pointer-events-none absolute -bottom-28 -left-10 w-72 h-72 rounded-full bg-cyan-500/30 blur-3xl float-slow" />
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0b1020] to-[#101a3a] text-white shadow-lg shadow-slate-900/10 p-8 sm:p-12 reveal">
         <div
-          className="pointer-events-none absolute inset-0 opacity-[0.07]"
+          className="pointer-events-none absolute inset-0 opacity-[0.05]"
           style={{
             backgroundImage:
               "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
@@ -209,7 +207,7 @@ const Home: FC = () => {
           </div>
 
           <div className="xl:w-1/3 flex justify-center shrink-0">
-            <div className="shrink-0 rounded-full p-1.5 bg-gradient-to-br from-indigo-400 via-cyan-300 to-indigo-500 shadow-2xl shadow-indigo-500/30">
+            <div className="shrink-0 rounded-full p-1.5 bg-gradient-to-br from-indigo-400 via-cyan-300 to-indigo-500 shadow-lg shadow-black/30">
               <img
                 src={`${process.env.PUBLIC_URL}/ahmadwaqar.jpg`}
                 alt="Ahmed Waqar Rao"
