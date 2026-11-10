@@ -53,6 +53,23 @@ const experiences: ExperienceItem[] = [
   },
   {
     role: "Co-Founder and CEO",
+    company: "Orhan Traders (Orhan International Trading Co., Ltd.)",
+    type: "Self-employed",
+    location: "Suzhou, China & Lahore, Pakistan",
+    start: "Sep 2024",
+    end: "Present",
+    description:
+      "China sourcing and international trade company helping overseas buyers source from China and move goods with confidence. Covers supplier discovery, negotiation, quality inspection, warehousing and consolidation, air, sea and road freight, customs clearance, and Amazon FBA prep. Serves buyers in Pakistan, the UAE, the UK, Europe, the US, and Australia.",
+    skills: [
+      "International Trade",
+      "Business Development",
+      "Supply Chain Management",
+      "Sourcing & Procurement",
+      "Logistics",
+    ],
+  },
+  {
+    role: "Co-Founder and CEO",
     company: "WebsDady",
     type: "Self-employed",
     location: "Xi'an, Shaanxi, China · On-site",
