@@ -43,7 +43,7 @@ const experiences: ExperienceItem[] = [
     start: "Jan 2024",
     end: "Present",
     description:
-      "Leading a versatile engineering team delivering innovative solutions. Managed 100+ projects with 100% client satisfaction. Focus on tailored solutions, technical expertise, and staying ahead of industry trends.",
+      "Leading a versatile engineering team delivering innovative solutions. Managed 500+ projects with 100% client satisfaction. Focus on tailored solutions, technical expertise, and staying ahead of industry trends.",
     skills: [
       "Start-up Leadership",
       "Project Management",
